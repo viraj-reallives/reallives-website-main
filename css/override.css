@@ -4849,6 +4849,7 @@ img {
 }
 /* modal css  */
 
+
 /* modal popup css  */
 
 @media screen and (min-width: 2560px) and (max-width: 3500px) {
@@ -5911,6 +5912,19 @@ img {
 }
 
 @media (max-width: 1368px) {
+
+  .modal-register {
+      width: 38%;
+    }
+  
+    .go-back-btn {
+      padding: 0.7rem 1.5rem;
+    }
+  
+    .register-btn {
+      padding: 0.7rem 1.5rem;
+    }
+    
   .getting-started-container {
     padding: 2rem 9rem;
     padding-bottom: 10px !important;
@@ -6127,6 +6141,19 @@ img {
 }
 
 @media (max-width: 1280px) {
+
+  .modal-register {
+      width: 38%;
+    }
+  
+    .go-back-btn {
+      padding: 0.7rem 1.5rem;
+    }
+  
+    .register-btn {
+      padding: 0.7rem 1.5rem;
+    }
+
   .sdg-container-imapct-tab {
     padding: 10px 4rem;
   }
@@ -6396,6 +6423,19 @@ img {
 }
 
 @media (max-width: 1180px) {
+
+  .modal-register {
+      width: 42%;
+    }
+  
+    .go-back-btn {
+      padding: 0.7rem 1.5rem;
+    }
+  
+    .register-btn {
+      padding: 0.7rem 1.5rem;
+    }
+
   .sdg-container-imapct-tab {
     padding: 10px 1rem;
   }
@@ -6730,6 +6770,19 @@ img {
 }
 
 @media (max-width: 1104px) {
+
+  .modal-register {
+      width: 44%;
+    }
+  
+    .go-back-btn {
+      padding: 0.7rem 1.5rem;
+    }
+  
+    .register-btn {
+      padding: 0.7rem 1.5rem;
+    }
+
   .sdg-container-imapct-tab {
     padding: 10px 1rem;
   }
@@ -7059,6 +7112,19 @@ img {
 }
 
 @media (max-width: 1024px) {
+
+  .modal-register {
+      width: 44%;
+    }
+  
+    .go-back-btn {
+      padding: 0.7rem 1.5rem;
+    }
+  
+    .register-btn {
+      padding: 0.7rem 1.5rem;
+    }
+
   .sdg-container-imapct-tab {
     padding: 10px 1rem;
   }
@@ -7399,6 +7465,19 @@ img {
 }
 
 @media (max-width: 991px) {
+
+    .modal-register {
+        width: 50%;
+      }
+    
+      .go-back-btn {
+        padding: 0.7rem 1.5rem;
+      }
+    
+      .register-btn {
+        padding: 0.7rem 1.5rem;
+      }
+
   /* mobile slider css  */
 
   .slider-wed-none {
@@ -7799,6 +7878,19 @@ img {
 }
 
 @media (max-width: 800px) {
+
+  .modal-register {
+      width: 55%;
+    }
+  
+    .go-back-btn {
+      padding: 0.7rem 1.5rem;
+    }
+  
+    .register-btn {
+      padding: 0.7rem 1.5rem;
+    }
+
   /* mobile slider css  */
 
   .slider-wed-none {
@@ -8075,6 +8167,20 @@ img {
 }
 
 @media (max-width: 770px) {
+
+
+  .modal-register {
+      width: 60%;
+    }
+  
+    .go-back-btn {
+      padding: 0.7rem 1.5rem;
+    }
+  
+    .register-btn {
+      padding: 0.7rem 1.5rem;
+    }
+
   /* mobile slider css  */
 
   .slider-wed-none {
@@ -8187,6 +8293,23 @@ img {
 }
 
 @media (max-width: 700px) {
+
+  .text-align-center-mobile {
+      text-align: center;
+    }
+
+    .modal-register {
+        width: 70%;
+      }
+    
+      .go-back-btn {
+        padding: 0.7rem 1.5rem;
+      }
+    
+      .register-btn {
+        padding: 0.7rem 1.5rem;
+      }
+
   .about-us-text {
     font-size: 31px;
   }
@@ -8532,6 +8655,28 @@ img {
 }
 
 @media (max-width: 650px) {
+
+  .text-align-center-mobile {
+      text-align: center;
+    }
+
+  .nav-links {
+      gap: 14px !important;
+
+    }
+
+   .modal-register {
+      width: 70%;
+    }
+  
+    .go-back-btn {
+      padding: 0.7rem 1.5rem;
+    }
+  
+    .register-btn {
+      padding: 0.7rem 1.5rem;
+    }
+
   .about-us-text {
     font-size: 31px;
   }
@@ -8904,6 +9049,27 @@ img {
 }
 
 @media (max-width: 570px) {
+
+  .text-align-center-mobile {
+      text-align: center;
+    }
+
+  .nav-links {
+      gap: 14px !important;
+    }
+
+  .modal-register {
+      width: 95%;
+    }
+  
+    .go-back-btn {
+      padding: 0.7rem 1rem;
+    }
+  
+    .register-btn {
+      padding: 0.7rem 1rem;
+    }
+
   .about-us-text {
     font-size: 31px;
   }
@@ -9281,6 +9447,26 @@ img {
 }
 
 @media (max-width: 530px) {
+  .text-align-center-mobile {
+      text-align: center;
+    }
+
+  .nav-links {
+      gap: 14px !important;
+    }
+
+  .modal-register {
+      width: 95%;
+    }
+  
+    .go-back-btn {
+      padding: 0.7rem 1rem;
+    }
+  
+    .register-btn {
+      padding: 0.7rem 1rem;
+    }
+
   /* contact us */
 
   .team-box-mian {
@@ -9692,6 +9878,27 @@ img {
 }
 
 @media (max-width: 480px) {
+
+  .text-align-center-mobile {
+      text-align: center;
+    }
+
+  .nav-links {
+      gap: 14px !important;
+    }
+
+  .modal-register {
+      width: 95%;
+    }
+  
+    .go-back-btn {
+      padding: 0.7rem 1rem;
+    }
+  
+    .register-btn {
+      padding: 0.7rem 1rem;
+    }
+
   /* contact us */
 
   .team-box-mian {
@@ -10107,6 +10314,27 @@ img {
 }
 
 @media (max-width: 450px) {
+
+  .text-align-center-mobile {
+      text-align: center;
+    }
+
+  .nav-links {
+      gap: 14px !important;
+    }
+
+  .modal-register {
+      width: 95%;
+    }
+  
+    .go-back-btn {
+      padding: 0.7rem 1rem;
+    }
+  
+    .register-btn {
+      padding: 0.7rem 1rem;
+    }
+
   /* contact us */
 
   .team-box-mian {
@@ -10523,6 +10751,27 @@ img {
 }
 
 @media (max-width: 440px) {
+
+  .text-align-center-mobile {
+      text-align: center;
+    }
+
+  .nav-links {
+      gap: 14px !important;
+    }
+
+  .modal-register {
+      width: 95%;
+    }
+  
+    .go-back-btn {
+      padding: 0.7rem 1rem;
+    }
+  
+    .register-btn {
+      padding: 0.7rem 1rem;
+    }
+
   /* contact us */
 
   .team-box-mian {
@@ -10739,6 +10988,28 @@ img {
 }
 
 @media (max-width: 400px) {
+
+  .text-align-center-mobile {
+      text-align: center;
+    }
+
+  .nav-links {
+      gap: 14px !important;
+    }
+
+
+  .modal-register {
+      width: 95%;
+    }
+  
+    .go-back-btn {
+      padding: 0.7rem 1rem;
+    }
+  
+    .register-btn {
+      padding: 0.7rem 1rem;
+    }
+
   /* contact us */
   .team-box-mian {
     padding: 0.4rem 1rem;
@@ -11158,6 +11429,27 @@ img {
 }
 
 @media (max-width: 390px) {
+
+  .text-align-center-mobile {
+      text-align: center;
+    }
+
+  .nav-links {
+      gap: 14px !important;
+    }
+
+  .modal-register {
+      width: 95%;
+    }
+  
+    .go-back-btn {
+      padding: 0.7rem 1rem;
+    }
+  
+    .register-btn {
+      padding: 0.7rem 1rem;
+    }
+
   /* contact us */
 
   .team-box-mian {
@@ -11566,6 +11858,28 @@ img {
 }
 
 @media (max-width: 375px) {
+
+  .text-align-center-mobile {
+      text-align: center;
+    }
+
+  .nav-links {
+      gap: 14px !important;
+    }
+
+  .modal-register{
+    width: 95%;
+  }
+
+    .go-back-btn {
+      padding: 0.7rem 1rem;
+    }
+
+        .register-btn{
+          padding: 0.7rem 1rem;
+        }
+
+
   /* contact us */
 
   .team-box-mian {
