@@ -334,6 +334,16 @@ body {
   color: white;
 }
 
+.first-child-package-box:nth-child(3):hover {
+  outline: 1px solid #ff9b4f;
+}
+
+.first-child-package-box:nth-child(3):hover .explor-btn-new {
+  background-color: #c05402;
+  border: 1px solid #ff9b4f;
+  color: white;
+}
+
 .pricing-box-outer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
