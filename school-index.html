@@ -108,7 +108,7 @@
                     </span>
                   </a>
 
-                  <a href="parent-index.html" target="_blank">
+                  <a href="parent-index.html" target="_blank" >
                     Home Schoolers
                     <span
                       class="material-symbols-outlined arrow-left"
@@ -124,7 +124,7 @@
 
               <a href="#products" class="nav-link">Products</a>
 
-              <a href="#educater" class="nav-link"> ChangeMaker Project</a>
+              <a href="#educater" class="nav-link text-align-center-mobile" > ChangeMaker Project</a>
 
               <a href="#impact" class="nav-link">Impact</a>
 
@@ -4874,21 +4874,15 @@
                       </div>
 
                       <div class="wrapper-button">
-                        <a
-                          class="no-text-decoration"
-                          href="https://reallivesworld.com/register-school"
-                          target="_blank"
-                        >
-                          <button class="get-started-btn-background">
-                            Get Started
-                            <span
-                              class="material-symbols-outlined"
-                              translate="no"
-                            >
-                              arrow_forward
-                            </span>
-                          </button>
-                        </a>
+                        <button class="get-started-btn-background openModal">
+                          Get Started
+                          <span
+                            class="material-symbols-outlined"
+                            translate="no"
+                          >
+                            arrow_forward
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -4935,21 +4929,15 @@
                       </div>
 
                       <div class="wrapper-button">
-                        <a
-                          class="no-text-decoration"
-                          href="https://reallivesworld.com/register-school"
-                          target="_blank"
-                        >
-                          <button class="get-started-btn-background">
-                            Get Started
-                            <span
-                              class="material-symbols-outlined"
-                              translate="no"
-                            >
-                              arrow_forward
-                            </span>
-                          </button>
-                        </a>
+                        <button class="get-started-btn-background openModal">
+                          Get Started
+                          <span
+                            class="material-symbols-outlined"
+                            translate="no"
+                          >
+                            arrow_forward
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -4991,31 +4979,19 @@
                         </span>
                         <span class="flex-style">
                           <h4 class="total-life-text">$1199 on renewal</h4>
-
-                          <!-- <div class="icon-info-box">
-													<span class="material-symbols-outlined color-info">
-														info
-													</span>
-												</div> -->
                         </span>
                       </div>
 
                       <div class="wrapper-button">
-                        <a
-                          class="no-text-decoration"
-                          href="https://reallivesworld.com/register-school"
-                          target="_blank"
-                        >
-                          <button class="get-started-btn-background">
-                            Get Started
-                            <span
-                              class="material-symbols-outlined"
-                              translate="no"
-                            >
-                              arrow_forward
-                            </span>
-                          </button>
-                        </a>
+                        <button class="get-started-btn-background openModal">
+                          Get Started
+                          <span
+                            class="material-symbols-outlined"
+                            translate="no"
+                          >
+                            arrow_forward
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -5902,6 +5878,64 @@
         }
       }
     </style>
+
+    <!-- modal popup price  -->
+
+    <div class="modal-overlay" id="modalOverlay"></div>
+   
+
+    <div class="modal-register" id="registerModal">
+      <div class="description-modal-box">
+        <p class="top-title-head">You’re almost there</p>
+
+        <p class="description-title">
+          You’ll be redirected to a quick registration form to get started with
+          your School License. No payment is required at this stage, we’ll only
+          collect basic details.
+        </p>
+      </div>
+
+      <div class="button-wrapper-box">
+        <button class="go-back-btn" id="closeModal" type="button">
+          Go Back
+        </button>
+
+        <a href="https://reallivesworld.com/register-school">
+          <button class="register-btn">Start Registration</button>
+        </a>
+      </div>
+    </div>
+
+
+    <script>
+
+      const openBtns = document.querySelectorAll(".openModal");
+      const modal = document.getElementById("registerModal");
+      const closeBtn = document.getElementById("closeModal");
+      const overlay = document.getElementById("modalOverlay");
+
+      // Open modal on all buttons
+
+      openBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          modal.classList.add("activemodal");
+          overlay.classList.add("active");
+        });
+      });
+
+      // Close modal
+      function closeModal() {
+        modal.classList.remove("activemodal");
+        overlay.classList.remove("active");
+      }
+
+      closeBtn.addEventListener("click", closeModal);
+      overlay.addEventListener("click", closeModal);
+
+  
+    </script>
+
+    <!-- modal popup price  -->
 
     <!-- slider imapct  -->
 
