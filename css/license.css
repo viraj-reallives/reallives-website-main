@@ -217,9 +217,15 @@ body {
 
 .left-side-container {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
   padding: 0px 10px;
+}
+
+.first-child-package-box:nth-child(3) {
+  grid-column: 1 / -1;
+  justify-self: center;
 }
 
 .right-side-container {
@@ -309,8 +315,7 @@ body {
 }
 
 .first-child-package-box:nth-child(1):hover {
-    outline: 1px solid #FF9B4F;
-
+  outline: 1px solid #ff9b4f;
 }
 
 .first-child-package-box:nth-child(1):hover .explor-btn-new {
@@ -320,8 +325,7 @@ body {
 }
 
 .first-child-package-box:nth-child(2):hover {
-    outline: 1px solid #FF9B4F;
-
+  outline: 1px solid #ff9b4f;
 }
 
 .first-child-package-box:nth-child(2):hover .explor-btn-new {
@@ -448,8 +452,7 @@ body {
 }
 
 .university-child-pricing:nth-child(1):hover {
-    outline: 1px solid #34F1CD;
-
+  outline: 1px solid #34f1cd;
 }
 
 .university-child-pricing:nth-child(1):hover .explor-btn-new {
@@ -459,8 +462,7 @@ body {
 }
 
 .university-child-pricing:nth-child(2):hover {
-    outline: 1px solid #34F1CD;
-
+  outline: 1px solid #34f1cd;
 }
 
 .university-child-pricing:nth-child(2):hover .explor-btn-new {
@@ -470,8 +472,7 @@ body {
 }
 
 .university-child-pricing:nth-child(3):hover {
-    outline: 1px solid #34F1CD;
-
+  outline: 1px solid #34f1cd;
 }
 
 .university-child-pricing:nth-child(3):hover .explor-btn-new {
@@ -481,8 +482,7 @@ body {
 }
 
 .university-child-pricing:nth-child(4):hover {
-    outline: 1px solid #34F1CD;
-
+  outline: 1px solid #34f1cd;
 }
 
 .university-child-pricing:nth-child(4):hover .explor-btn-new {
@@ -492,8 +492,7 @@ body {
 }
 
 .university-child-pricing:nth-child(5):hover {
-    outline: 1px solid #34F1CD;
-
+  outline: 1px solid #34f1cd;
 }
 
 .university-child-pricing:nth-child(5):hover .explor-btn-new {
@@ -503,8 +502,7 @@ body {
 }
 
 .university-child-pricing:nth-child(6):hover {
-    outline: 1px solid #34F1CD;
-
+  outline: 1px solid #34f1cd;
 }
 
 .university-child-pricing:nth-child(6):hover .explor-btn-new {
@@ -582,8 +580,8 @@ body {
 }
 
 .family-pricing-box:nth-child(1):hover {
-    outline: 1px solid #CE8CF6;
-    color: white;
+  outline: 1px solid #ce8cf6;
+  color: white;
 }
 
 .family-pricing-box:nth-child(1):hover .explor-btn-new {
@@ -592,8 +590,8 @@ body {
 }
 
 .family-pricing-box:nth-child(2):hover {
-    outline: 1px solid #CE8CF6;
-    color: white;
+  outline: 1px solid #ce8cf6;
+  color: white;
 }
 
 .family-pricing-box:nth-child(2):hover .explor-btn-new {
@@ -602,7 +600,7 @@ body {
 }
 
 .family-pricing-box:nth-child(3):hover {
-    outline: 1px solid #CE8CF6;
+  outline: 1px solid #ce8cf6;
 }
 
 .family-pricing-box:nth-child(3):hover .explor-btn-new {
@@ -656,7 +654,7 @@ body {
 }
 
 .gamer-child-pricing:nth-child(1):hover {
-    outline: 1px solid #89D9E5;
+  outline: 1px solid #89d9e5;
 }
 
 .gamer-child-pricing:nth-child(1):hover .explor-btn-new {
@@ -666,7 +664,7 @@ body {
 }
 
 .gamer-child-pricing:nth-child(2):hover {
-    outline: 1px solid #89D9E5;
+  outline: 1px solid #89d9e5;
 }
 
 .gamer-child-pricing:nth-child(2):hover .explor-btn-new {
@@ -676,7 +674,7 @@ body {
 }
 
 .gamer-child-pricing:nth-child(3):hover {
-    outline: 1px solid #89D9E5;
+  outline: 1px solid #89d9e5;
 }
 
 .gamer-child-pricing:nth-child(3):hover .explor-btn-new {
@@ -686,7 +684,7 @@ body {
 }
 
 .gamer-child-pricing:nth-child(4):hover {
-    outline: 1px solid #89D9E5;
+  outline: 1px solid #89d9e5;
 }
 
 .gamer-child-pricing:nth-child(4):hover .explor-btn-new {
