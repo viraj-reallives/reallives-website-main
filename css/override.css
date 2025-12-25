@@ -4933,7 +4933,7 @@ justify-content: space-between;
   border: 1px solid black;
   height: 100%;
   display: grid;
-  grid-template-rows: 30% 1fr;
+  grid-template-rows: 20% 1fr;
   gap: 1rem;
   padding: 1rem;
 }
@@ -4952,9 +4952,13 @@ justify-content: space-between;
 }
 
 .logo-korea-university{
-  width: 150px;
   height: 70px;
-  border: 1px solid red;
+}
+
+.logo-korea-university>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .download-text-font{
