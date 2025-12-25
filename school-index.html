@@ -4920,107 +4920,114 @@
 
         <div class="korea-university-container">
           <div class="inner-styles-box">
-
             <div class="top-korea-university-box">
-
               <div class="logo-korea-university">
-                <img class="" src="image/Korea-university.svg" alt="">
+                <img class="" src="image/Korea-university.svg" alt="" />
               </div>
 
-            <a href="pdf/RealLives-Empathy-Canvas-new.pdf" download="Peer-Reviewed-Research.pdf" target="_self"
-              rel="noopener noreferrer" class="no-text-decoration color-f2f2f2 flex-center gap-10px" onclick="downloadPDF()">
-              Peer-Reviewed Research
-              <span class="material-symbols-outlined download-text-font">
-                arrow_downward
-              </span>
-            </a>
-
-
+              <a
+                href="pdf/RealLives-Empathy-Canvas-new.pdf"
+                download="Peer-Reviewed-Research.pdf"
+                target="_self"
+                rel="noopener noreferrer"
+                class="no-text-decoration color-f2f2f2 flex-center gap-10px"
+                onclick="downloadPDF()"
+              >
+                Peer-Reviewed Research
+                <span class="material-symbols-outlined download-text-font">
+                  arrow_downward
+                </span>
+              </a>
             </div>
             <div class="bottom-university-box">
-
-               <div class="data-content-university border-right-content-university">
-
+              <div
+                class="data-content-university border-right-content-university"
+              >
                 <span class="flex-center-colume gap-10px">
                   <p class="title-content-left">Paper Title</p>
-                  <p class="description-content-title">Effects of a Game-Based Empathy Education Program Linked to the SDGs</p>
+                  <p class="description-content-title">
+                    Effects of a Game-Based Empathy Education Program Linked to
+                    the SDGs
+                  </p>
                 </span>
 
                 <span class="flex-center-colume gap-10px">
                   <p class="title-content-left">Institution</p>
-                  <p class="description-content-title">Korea University (Republic of Korea)</p>
+                  <p class="description-content-title">
+                    Korea University (Republic of Korea)
+                  </p>
                 </span>
 
                 <span class="flex-center-colume gap-10px">
                   <p class="title-content-left">What was studied </p>
-                  <p class="description-content-title">Evaluation of RealLives Simulation as a game-based empathy education tool for high school and university learners</p>
+                  <p class="description-content-title">
+                    Evaluation of RealLives Simulation as a game-based empathy
+                    education tool for high school and university learners
+                  </p>
                 </span>
+              </div>
 
-               </div>
-
-              <div class="data-content-university ">
-
+              <div class="data-content-university">
                 <span class="flex-center-colume gap-10px">
-
                   <p class="title-content-left">Key Findings </p>
 
                   <ul class="listed-container-box">
+                    <li>
+                      Significant growth in cognitive, emotional, and
+                      attitudinal empathy
+                    </li>
 
                     <li>
-                    Significant growth in cognitive, emotional, and attitudinal empathy
+                      Strong alignment with UN SDGs, especially SDGs 3, 4, 8,
+                      11, and 16
                     </li>
-                  
+
                     <li>
-                    Strong alignment with UN SDGs, especially SDGs 3, 4, 8, 11, and 16
+                      Learners moved beyond awareness to reflection and action
+                      intent
                     </li>
-                  
-                    <li>
-                    Learners moved beyond awareness to reflection and action intent
-                    </li>
-                  
                   </ul>
-              
                 </span>
-                
+
                 <span class="flex-center-colume gap-10px position-relative-12">
-                    <p class="title-content-left">Methods </p>
-                    <p class="description-content-title">Qualitative coding, language network analysis, topic modeling (NetMiner)</p>
+                  <p class="title-content-left">Methods </p>
+                  <p class="description-content-title">
+                    Qualitative coding, language network analysis, topic
+                    modeling (NetMiner)
+                  </p>
                 </span>
-
               </div>
-
             </div>
 
-            <!-- <div class="pdf-show-button-container flex-center gap-1">
-              <button class="flex-center  gap-10px read-pdf-btn" >Read the Paper <img src="logo-image/pdf-svgrepo-com 1.svg" alt=""></button>
-              <button class="flex-center bring-school-btn ">Bring This to Your School</button>
-            </div> -->
-           
+            <div class="pdf-show-button-container flex-center gap-1">
+              <button
+                class="flex-center gap-10px read-pdf-btn"
+                onclick="openPDF()"
+              >
+                Read the Paper
+                <img src="logo-image/pdf-svgrepo-com 1.svg" alt="" />
+              </button>
 
-          <div class="pdf-show-button-container flex-center gap-1">
-            <button class="flex-center gap-10px read-pdf-btn" onclick="openPDF()">
-              Read the Paper
-              <img src="logo-image/pdf-svgrepo-com 1.svg" alt="">
-            </button>
-          
-            <button class="flex-center bring-school-btn">
-              Bring This to Your School
-            </button>
-          </div>
-          
-
+              <a href="#contact-us" class="nav-link">
+                <button class="flex-center bring-school-btn">
+                  Bring This to Your School
+                </button>
+              </a>
+            </div>
           </div>
 
-        
-        <div class="pdf-container" id="pdfContainer">
-          <div class="pdf-header">
-            <button class="cancel-btn" onclick="closePDF()">Cancel</button>
+          <div class="pdf-container" id="pdfContainer">
+            <div class="pdf-header">
+              <button class="cancel-btn" onclick="closePDF()">Cancel</button>
+            </div>
+            <iframe
+              id="pdfViewer"
+              width="100%"
+              height="100%"
+              style="border: 1px solid #ccc"
+            ></iframe>
           </div>
-          <iframe id="pdfViewer" width="100%" height="100%" style="border:1px solid #ccc;"></iframe>
         </div>
-        
-        </div>
-
       </section>
 
       <!-- Research Evidence -->
@@ -5563,45 +5570,57 @@
       }
     </style>
 
+    <script>
+      // open pdf js
 
+      function openPDF() {
+        const container = document.getElementById("pdfContainer");
+        const iframe = document.getElementById("pdfViewer");
 
+        iframe.src = "pdf/RealLives-Empathy-Canvas-new.pdf";
+        container.style.display = "block";
 
- <script>
-  function openPDF() {
-      const container = document.getElementById("pdfContainer");
-      const iframe = document.getElementById("pdfViewer");
+        setTimeout(() => {
+          const headerOffset = 90;
+          const elementPosition = container.getBoundingClientRect().top;
+          const offsetPosition =
+            elementPosition + window.pageYOffset - headerOffset;
 
-      iframe.src = "pdf/RealLives-Empathy-Canvas-new.pdf";
-      container.style.display = "block";
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        }, 50);
+      }
 
-      container.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-    }
+      // open pdf js
 
-    function closePDF() {
-      const container = document.getElementById("pdfContainer");
-      const iframe = document.getElementById("pdfViewer");
+      // close js button
 
-      container.style.display = "none";
-      iframe.src = "";
-    }
+      function closePDF() {
+        const container = document.getElementById("pdfContainer");
+        const iframe = document.getElementById("pdfViewer");
 
-    // download pdf 
+        // Hide PDF container
+        container.style.display = "none";
 
-  function downloadPDF() {
-    const link = document.createElement("a");
-    link.href = "/pdf/RealLives-Empathy-Canvas-new.pdf";
-    link.download = "Peer-Reviewed-Research.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
-</script>
+        // Reset iframe src to stop PDF loading
+        iframe.src = "";
+      }
 
+      // close js button
 
+      // download pdf
 
+      function downloadPDF() {
+        const link = document.createElement("a");
+        link.href = "/pdf/RealLives-Empathy-Canvas-new.pdf";
+        link.download = "Peer-Reviewed-Research.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    </script>
 
     <!-- modal popup price  -->
 
@@ -5674,8 +5693,6 @@
 
         setInterval(showNextImage, 3000);
       }
-
-    
     </script>
 
     <!-- slider impact  -->
