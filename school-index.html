@@ -4927,13 +4927,16 @@
                 <img class="" src="image/Korea-university.svg" alt="">
               </div>
 
-              <a class="no-text-decoration color-f2f2f2 flex-center gap-10px " href="file.pdf" download>Peer-Reviewed Research <span class="material-symbols-outlined download-text-font">
+            <a href="pdf/RealLives-Empathy-Canvas-new.pdf" download="Peer-Reviewed-Research.pdf" target="_self"
+              rel="noopener noreferrer" class="no-text-decoration color-f2f2f2 flex-center gap-10px" onclick="downloadPDF()">
+              Peer-Reviewed Research
+              <span class="material-symbols-outlined download-text-font">
                 arrow_downward
-              </span> </a>
+              </span>
+            </a>
 
 
             </div>
-
             <div class="bottom-university-box">
 
                <div class="data-content-university border-right-content-university">
@@ -4979,23 +4982,43 @@
               
                 </span>
                 
-                 <span class="flex-center-colume gap-10px position-relative-11">
+                <span class="flex-center-colume gap-10px position-relative-12">
                     <p class="title-content-left">Methods </p>
                     <p class="description-content-title">Qualitative coding, language network analysis, topic modeling (NetMiner)</p>
-                  </span>
+                </span>
 
               </div>
 
             </div>
 
-            <div class="pdf-show-button-container flex-center gap-1">
-              <button class="flex-center  gap-10px read-pdf-btn">Read the Paper <img src="logo-image/pdf-svgrepo-com 1.svg" alt=""></button>
+            <!-- <div class="pdf-show-button-container flex-center gap-1">
+              <button class="flex-center  gap-10px read-pdf-btn" >Read the Paper <img src="logo-image/pdf-svgrepo-com 1.svg" alt=""></button>
               <button class="flex-center bring-school-btn ">Bring This to Your School</button>
-            </div>
+            </div> -->
+           
 
+          <div class="pdf-show-button-container flex-center gap-1">
+            <button class="flex-center gap-10px read-pdf-btn" onclick="openPDF()">
+              Read the Paper
+              <img src="logo-image/pdf-svgrepo-com 1.svg" alt="">
+            </button>
+          
+            <button class="flex-center bring-school-btn">
+              Bring This to Your School
+            </button>
+          </div>
+          
 
           </div>
 
+        
+        <div class="pdf-container" id="pdfContainer">
+          <div class="pdf-header">
+            <button class="cancel-btn" onclick="closePDF()">Cancel</button>
+          </div>
+          <iframe id="pdfViewer" width="100%" height="100%" style="border:1px solid #ccc;"></iframe>
+        </div>
+        
         </div>
 
       </section>
@@ -5540,6 +5563,46 @@
       }
     </style>
 
+
+
+
+ <script>
+  function openPDF() {
+      const container = document.getElementById("pdfContainer");
+      const iframe = document.getElementById("pdfViewer");
+
+      iframe.src = "pdf/RealLives-Empathy-Canvas-new.pdf";
+      container.style.display = "block";
+
+      container.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+
+    function closePDF() {
+      const container = document.getElementById("pdfContainer");
+      const iframe = document.getElementById("pdfViewer");
+
+      container.style.display = "none";
+      iframe.src = "";
+    }
+
+    // download pdf 
+
+  function downloadPDF() {
+    const link = document.createElement("a");
+    link.href = "/pdf/RealLives-Empathy-Canvas-new.pdf";
+    link.download = "Peer-Reviewed-Research.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+</script>
+
+
+
+
     <!-- modal popup price  -->
 
     <div class="modal-overlay" id="modalOverlay"></div>
@@ -5611,6 +5674,8 @@
 
         setInterval(showNextImage, 3000);
       }
+
+    
     </script>
 
     <!-- slider impact  -->
