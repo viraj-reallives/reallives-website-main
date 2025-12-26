@@ -1073,7 +1073,7 @@ body {
 
 /* Responsive Design */
 
-@media (max-width: 768px) {
+@media (max-width: 1104px) {
 	.container {
 		padding: 0 var(--spacing-lg);
 	}
