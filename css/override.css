@@ -4850,7 +4850,7 @@ img {
 
 .peer-reviewed-container {
   padding-top: 1rem;
-  padding: 1rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
