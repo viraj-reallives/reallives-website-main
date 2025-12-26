@@ -130,6 +130,8 @@
 
               <a href="#impact" class="nav-link">Impact</a>
 
+                <a href="#research" class="nav-link text-align-center-mobile">Research & Evidence</a>
+
               <a href="#pricing" class="nav-link">Pricing</a>
 
               <!-- <a href="about.html" class="nav-link">Our Mission</a> -->
@@ -5193,6 +5195,154 @@
         </div>
       </section>
 
+      <!-- Research Evidence -->
+      
+      <section id="research" class="tab-panel padding-top-override-class">
+      
+        <div class="ressearch-evidence-container">
+          <img src="image/research-image.png" alt="" />
+      
+          <div class="scrrent-shot-content-box">
+            <div class="research-container-image">
+              <div class="left-box-chnage-maker-research">
+                <h1 class="research-title-first">
+                  Research-Backed Learning <br />
+                  with RealLives
+                </h1>
+      
+                <p class="research-description-text">
+                  RealLives Simulation has been studied and published by leading
+                  universities and educators, demonstrating measurable impact on
+                  empathy, global citizenship, and SDG-aligned learning
+                  outcomes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="peer-reviewed-container">
+          <p class="research-highlight-title">
+            Peer-Reviewed Research Highlight
+          </p>
+      
+          <p class="research-highlight-description">
+            A 2025 peer-reviewed study published in Human Ecology Research shows
+            that RealLives Simulation significantly enhances empathy, global
+            awareness, and SDG-aligned thinking among high school and university
+            students.
+          </p>
+        </div>
+      
+        <div class="korea-university-container">
+          <div class="inner-styles-box">
+            <div class="top-korea-university-box">
+              <div class="logo-korea-university">
+                <img class="" src="image/Korea-university.svg" alt="" />
+              </div>
+      
+              <a href="pdf/Kwon etal_2025_RealLives in HE class-2.pdf" download="Peer-Reviewed-Research.pdf" target="_self"
+                rel="noopener noreferrer" class="no-text-decoration color-f2f2f2 flex-center gap-10px peer-reviewed-text"
+                onclick="downloadPDF()">
+                Peer-Reviewed Research
+                <span class="material-symbols-outlined download-text-font">
+                  arrow_downward
+                </span>
+              </a>
+            </div>
+      
+            <div class="bottom-university-box">
+              <div class="data-content-university border-right-content-university">
+                <span class="flex-center-colume gap-10px">
+                  <p class="title-content-left">Paper Title</p>
+                  <p class="description-content-title">
+                    Effects of a Game-Based Empathy Education Program Linked to
+                    the SDGs
+                  </p>
+                </span>
+      
+                <span class="flex-center-colume gap-10px">
+                  <p class="title-content-left">Institution</p>
+                  <p class="description-content-title">
+                    Korea University (Republic of Korea)
+                  </p>
+                </span>
+      
+                <span class="flex-center-colume gap-10px">
+                  <p class="title-content-left">What was studied </p>
+                  <p class="description-content-title">
+                    Evaluation of RealLives Simulation as a game-based empathy
+                    education tool for high school and university learners
+                  </p>
+                </span>
+              </div>
+      
+              <div class="data-content-university">
+                <span class="flex-center-colume gap-10px">
+                  <p class="title-content-left">Key Findings </p>
+      
+                  <ul class="listed-container-box">
+                    <li>
+                      Significant growth in cognitive, emotional, and
+                      attitudinal empathy
+                    </li>
+      
+                    <li>
+                      Strong alignment with UN SDGs, especially SDGs 3, 4, 8,
+                      11, and 16
+                    </li>
+      
+                    <li>
+                      Learners moved beyond awareness to reflection and action
+                      intent
+                    </li>
+                  </ul>
+                </span>
+      
+                <span class="flex-center-colume gap-10px position-relative-12">
+                  <p class="title-content-left">Methods </p>
+                  <p class="description-content-title">
+                    Qualitative coding, language network analysis, topic
+                    modeling (NetMiner)
+                  </p>
+                </span>
+              </div>
+            </div>
+      
+            <div class="pdf-show-button-container flex-center gap-1">
+      
+              <button class="flex-center gap-10px read-pdf-btn" onclick="openPDF()">
+                Read the Paper
+      
+                <div class="pdf-img">
+                  <img src="logo-image/pdf-svgrepo-com 1.svg" alt="" />
+                </div>
+      
+              </button>
+      
+      
+              <a href="#contact-us" class="nav-link hight-pdf-btn">
+      
+                <button class="flex-center bring-school-btn">
+                  Bring This to Your School
+                </button>
+      
+              </a>
+      
+            </div>
+          </div>
+      
+          <div class="pdf-container" id="pdfContainer">
+            <div class="pdf-header">
+              <button class="cancel-btn" onclick="closePDF()">Cancel</button>
+            </div>
+            <iframe id="pdfViewer" width="100%" height="700px" style="border: 1px solid #ccc"></iframe>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Research Evidence -->
+
       <!-- contact-us -->
 
       <section class="section tab-panel" id="contact-us">
@@ -5670,6 +5820,8 @@
       }
     </style>
 
+
+
     <div class="modal-overlay" id="modalOverlay"></div>
 
     <div class="modal-register" id="registerModal">
@@ -5693,6 +5845,61 @@
         </a>
       </div>
     </div>
+
+
+      <script>
+
+        // open pdf js
+
+        function openPDF() {
+          const container = document.getElementById("pdfContainer");
+          const iframe = document.getElementById("pdfViewer");
+
+          iframe.src = "pdf/Kwon etal_2025_RealLives in HE class-2.pdf";
+          container.style.display = "block";
+
+          setTimeout(() => {
+            const headerOffset = 90;
+            const elementPosition = container.getBoundingClientRect().top;
+            const offsetPosition =
+              elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: "smooth",
+            });
+          }, 50);
+        }
+
+        // open pdf js
+
+        // close js button
+
+        function closePDF() {
+          const container = document.getElementById("pdfContainer");
+          const iframe = document.getElementById("pdfViewer");
+
+          // Hide PDF container
+          container.style.display = "none";
+
+          // Reset iframe src to stop PDF loading
+          iframe.src = "";
+        }
+
+        // close js button
+
+        // download pdf
+
+        function downloadPDF() {
+          const link = document.createElement("a");
+          link.href = "/pdf/RealLives-Empathy-Canvas-new.pdf";
+          link.download = "Peer-Reviewed-Research.pdf";
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        }
+      </script>
+
 
     <script>
 		
