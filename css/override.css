@@ -5017,6 +5017,11 @@ img {
   border-radius: 6px;
 }
 
+.pdf-hight{
+  width: 23px;
+  height:20px;
+}
+
 /* Research & Evidence end css  */
 
 @media screen and (min-width: 2560px) and (max-width: 3500px) {
@@ -6724,7 +6729,6 @@ img {
   
     .bring-school-btn {
       font-size: 14px;
-      padding: 0.8rem 1rem;
     }
   
     .korea-university-container {
@@ -7161,7 +7165,6 @@ img {
   
     .bring-school-btn {
       font-size: 13px;
-      padding: 0.8rem 1rem;
     }
   
     .korea-university-container {
@@ -7602,7 +7605,6 @@ img {
     
       .bring-school-btn {
         font-size: 13px;
-        padding: 0.8rem 1rem;
       }
     
       .korea-university-container {
@@ -8048,7 +8050,6 @@ img {
     
       .bring-school-btn {
         font-size: 13px;
-        padding: 0.8rem 1rem;
       }
     
       .korea-university-container {
@@ -8574,7 +8575,6 @@ img {
   
     .bring-school-btn {
       font-size: 13px;
-      padding: 0.8rem 1rem;
     }
   
     .korea-university-container {
