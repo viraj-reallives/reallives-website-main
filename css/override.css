@@ -11629,6 +11629,10 @@ img {
 
 @media (max-width: 450px) {
 
+  .hight-pdf-btn {
+      height: min-content;
+    }
+    
   .footer-content {
       grid-template-columns: 1fr !important;
       padding-left: 1rem;
@@ -12159,6 +12163,10 @@ img {
 
 @media (max-width: 440px) {
 
+  .hight-pdf-btn {
+      height: min-content;
+    }
+
   .footer-content {
       grid-template-columns: 1fr !important;
       padding-left: 1rem;
@@ -12488,6 +12496,10 @@ img {
 }
 
 @media (max-width: 400px) {
+
+  .hight-pdf-btn {
+      height: min-content;
+    }
 
   .footer-content {
       grid-template-columns: 1fr !important;
@@ -13023,6 +13035,10 @@ img {
 
 @media (max-width: 390px) {
 
+  .hight-pdf-btn {
+      height: min-content;
+    }
+
   .footer-content {
       grid-template-columns: 1fr !important;
       padding-left: 1rem;
@@ -13544,6 +13560,11 @@ img {
 }
 
 @media (max-width: 375px) {
+
+  .hight-pdf-btn {
+      height: min-content;
+    }
+
   .footer-content {
       grid-template-columns: 1fr !important;
       padding-left: 1rem;
