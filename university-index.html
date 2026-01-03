@@ -6218,15 +6218,15 @@
 
     <script>
       function showTab(tabId) {
-        // sabhi tab hide karo
+       
         document.querySelectorAll(".tab-impact").forEach((tab) => {
           tab.classList.remove("active-impact");
         });
 
-        // jo tab dikhana hai use show karo
+      
         document.getElementById(tabId).classList.add("active-impact");
 
-        // page ko top par scroll karo
+       
         window.scrollTo({
           top: 0,
           behavior: "smooth", // smooth scrolling (agar instantly chahiye to hata do)
