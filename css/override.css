@@ -5173,6 +5173,9 @@ overflow: hidden;
 
 .santa-clara-university-color{
   background: linear-gradient(90deg, #750927 34%, #B30738 69.71%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .university-albany-color{
@@ -5181,6 +5184,8 @@ overflow: hidden;
 
 .individual-research-university-color{
   background: linear-gradient(90deg, #14BCD4 0%, #0A626E 100%);
+  display: flex;
+  align-items: center;
 }
 
 .head-card-inner-browse{
@@ -5254,9 +5259,20 @@ overflow: hidden;
   height: 100%;
 }
 
+.santa-clara-text{
+    font-weight: 500;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.University-Albany-logo{
+  width: 250px !important;
+}
+
 /* New Research & Evidence end css  */
 
 @media screen and (min-width: 2560px) and (max-width: 3500px) {
+
   .logo-icon-reallives > img {
     width: 100%;
   }
@@ -5628,6 +5644,7 @@ overflow: hidden;
 }
 
 @media (min-width: 1729px) and (max-width: 2560px) {
+
   .logo-icon-reallives > img {
     width: 100%;
   }
@@ -6011,8 +6028,6 @@ overflow: hidden;
 }
 
 @media (max-width: 1728px) {
-
-
 
   .wrapper-outer-container-priving {
     padding-top: 3rem;
