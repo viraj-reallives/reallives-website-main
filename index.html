@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
@@ -41,72 +41,72 @@
     <title>RealLives Foundation</title>
   </head>
 
-  <body style="background-color: black">
+  <body>
     <div
       class="new-landing-container-outer tab-content-landing active"
       id="tab1"
     >
-      <div class="slider-container slider-wed-none">
-        <div class="header-logo-login">
-          <div
-            style="
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              gap: 2rem;
-            "
-          >
-            <img class="logo" src="background-css/images/logo.svg" alt="Logo" />
-            <div class="language-switcher">
-              <span
-                id="langIcon"
-                class="material-symbols-outlined cursor"
-                title="Language"
-                style="color: white"
-                translate="no"
-                >translate
-              </span>
-              <div id="customDropdown" class="dropdown hidden">
-                <div data-value="en">English</div>
-                <div data-value="ko">Korean</div>
-                <div data-value="sw">Swedish</div>
-                <div data-value="ja">Japanese</div>
-                <div data-value="de">German</div>
-                <div data-value="fr">French</div>
-                <div data-value="hi">Hindi</div>
-                <div data-value="mr">Marathi</div>
-                <div data-value="ur">Urdu</div>
-                <div data-value="fi">Finnish</div>
-                <div data-value="zh-CN">Chinese (Simplified)</div>
-                <div data-value="zh-TW">Chinese (Traditional)</div>
-                <div data-value="es">Spanish</div>
-                <div data-value="th">Thai</div>
-                <div data-value="ms">Malay</div>
-                <div data-value="id">Bahasa Indonesia</div>
-                <div data-value="nl">Dutch</div>
-                <div data-value="gsw">Swiss German</div>
-                <div data-value="it">Italian</div>
-              </div>
+      <div class="header-logo-login">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+          "
+        >
+          <img class="logo" src="background-css/images/logo.svg" alt="Logo" />
+          <div class="language-switcher">
+            <span
+              id="langIcon"
+              class="material-symbols-outlined cursor"
+              title="Language"
+              style="color: white"
+              translate="no"
+              >translate
+            </span>
+            <div id="customDropdown" class="dropdown hidden">
+              <div data-value="en">English</div>
+              <div data-value="ko">Korean</div>
+              <div data-value="sw">Swedish</div>
+              <div data-value="ja">Japanese</div>
+              <div data-value="de">German</div>
+              <div data-value="fr">French</div>
+              <div data-value="hi">Hindi</div>
+              <div data-value="mr">Marathi</div>
+              <div data-value="ur">Urdu</div>
+              <div data-value="fi">Finnish</div>
+              <div data-value="zh-CN">Chinese (Simplified)</div>
+              <div data-value="zh-TW">Chinese (Traditional)</div>
+              <div data-value="es">Spanish</div>
+              <div data-value="th">Thai</div>
+              <div data-value="ms">Malay</div>
+              <div data-value="id">Bahasa Indonesia</div>
+              <div data-value="nl">Dutch</div>
+              <div data-value="gsw">Swiss German</div>
+              <div data-value="it">Italian</div>
             </div>
           </div>
-
-          <div class="wrapper-home-header">
-            <span class="login" style="cursor: pointer">
-              <a href="license.html" target="_blank">
-                <button class="home-btn-event">Buy License</button>
-              </a>
-            </span>
-
-            <span class="login" style="cursor: pointer">
-              <a href="https://reallivesworld.com/login" target="_blank">
-                <button class="home-btn-event">Log In</button>
-              </a>
-            </span>
-          </div>
-
-          <div id="google_translate_element" style="display: none"></div>
         </div>
 
+        <div class="wrapper-home-header">
+          <span class="login" style="cursor: pointer">
+            <a href="license.html" target="_blank">
+              <button class="home-btn-event">Buy License</button>
+            </a>
+          </span>
+
+          <span class="login" style="cursor: pointer">
+            <a href="https://reallivesworld.com/login" target="_blank">
+              <button class="home-btn-event">Log In</button>
+            </a>
+          </span>
+        </div>
+
+        <div id="google_translate_element" style="display: none"></div>
+      </div>
+
+      <div class="slider-container slider-wed-none">
         <div class="slider" id="slider"></div>
 
         <div class="scroll-arrow" id="scrollBtn">
@@ -646,7 +646,14 @@
               method="POST"
               target="hidden_iframe"
               id="gform"
-              onsubmit="if(validateCaptcha()) { submitted=true; return true; } else { return false; }"
+              onsubmit="
+                if (validateCaptcha()) {
+                  submitted = true;
+                  return true;
+                } else {
+                  return false;
+                }
+              "
             >
               <div class="input-filed-container">
                 <div class="form-group" style="margin-top: 1rem">
@@ -893,7 +900,7 @@
       function googleTranslateElementInit() {
         new google.translate.TranslateElement(
           { pageLanguage: "en", autoDisplay: false },
-          "google_translate_element"
+          "google_translate_element",
         );
       }
 
