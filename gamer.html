@@ -81,6 +81,13 @@
   </head>
 
   <body style="transition: none !important" class="background-pricing">
+
+    <div id="customAlert" class="custom-alert">
+      <div class="custom-alert-box">
+        <h3>⚠️ Content Protected</h3>
+      </div>
+    </div>
+
     <!-- Header -->
 
     <header class="fixed-postion">
@@ -2958,6 +2965,52 @@
         display: none;
       }
     </style>
+
+      <script>
+      const customAlert = document.getElementById("customAlert");
+      let alertTimeout;
+
+      function showAlert() {
+        if (customAlert.style.display !== "flex") {
+          customAlert.style.display = "flex";
+
+          clearTimeout(alertTimeout);
+
+          alertTimeout = setTimeout(() => {
+            customAlert.style.display = "none";
+          }, 2000);
+        }
+      }
+
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        showAlert();
+      });
+
+      document.querySelectorAll("img").forEach((img) => {
+        img.addEventListener("dragstart", function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          showAlert();
+        });
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.ctrlKey && (e.key === "s" || e.key === "u")) {
+          e.preventDefault();
+          e.stopPropagation();
+          showAlert();
+        }
+
+        if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
+          e.preventDefault();
+          e.stopPropagation();
+          showAlert();
+        }
+      });
+    </script>
+
 
     <div class="modal-overlay" id="modalOverlay"></div>
 

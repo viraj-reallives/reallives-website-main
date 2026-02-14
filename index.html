@@ -42,6 +42,14 @@
   </head>
 
   <body>
+    <div id="customAlert" class="custom-alert">
+      <div class="custom-alert-box">
+        <h3>⚠️ Content Protected</h3>
+        <!-- <p>You cannot right-click on this page.</p> -->
+        <!-- <button onclick="closeAlert()">OK</button> -->
+      </div>
+    </div>
+
     <div
       class="new-landing-container-outer tab-content-landing active"
       id="tab1"
@@ -836,6 +844,52 @@
       }
     </style>
 
+    <script>
+
+      const customAlert = document.getElementById("customAlert");
+      let alertTimeout;
+
+      function showAlert() {
+        if (customAlert.style.display !== "flex") {
+          customAlert.style.display = "flex";
+
+          clearTimeout(alertTimeout);
+
+          alertTimeout = setTimeout(() => {
+            customAlert.style.display = "none";
+          }, 2000);
+        }
+      }
+
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        showAlert();
+      });
+
+      document.querySelectorAll("img").forEach((img) => {
+        img.addEventListener("dragstart", function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          showAlert();
+        });
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.ctrlKey && (e.key === "s" || e.key === "u")) {
+          e.preventDefault();
+          e.stopPropagation();
+          showAlert();
+        }
+
+        if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "i")) {
+          e.preventDefault();
+          e.stopPropagation();
+          showAlert();
+        }
+      });
+    </script>
+
     <!-- contact js  -->
 
     <script>
@@ -992,6 +1046,23 @@
         document.getElementById("status").innerText = "✅ Submitting...";
         return true;
       }
+    </script>
+
+    <script>
+      document.querySelectorAll("img").forEach((img) => {
+        img.addEventListener("dragstart", function (e) {
+          e.preventDefault();
+        });
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.ctrlKey && (e.key === "s" || e.key === "u")) {
+          e.preventDefault();
+        }
+        if (e.ctrlKey && e.shiftKey && e.key === "I") {
+          e.preventDefault();
+        }
+      });
     </script>
 
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
