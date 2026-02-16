@@ -38,6 +38,7 @@
   </head>
 
   <body style="transition: none !important">
+
     <div id="customAlert" class="custom-alert">
       <div class="custom-alert-box">
         <h3>⚠️ Content Protected</h3>
@@ -6458,86 +6459,47 @@
 
       <section class="section tab-panel" id="contact-us">
         <div class="container padding-contact-right-left">
+
           <div class="contact-grid">
-            <div class="contact-form-section">
-              <h2 class="section-title text-start">Get in Touch</h2>
 
-              <iframe
-                name="hidden_iframe"
-                id="hidden_iframe"
-                style="display: none"
-              ></iframe>
+             <div class="contact-form-section">
+  <h2 class="section-title text-start">Get in Touch</h2>
 
-              <form
-                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc0HVNTsV6padFmp5fIwED8RmLv8PDks4j6WikAh1qovMt5FQ/formResponse"
-                method="POST"
-                target="hidden_iframe"
-                id="gform"
-                onsubmit="
-                  if (validateCaptcha()) {
-                    submitted = true;
-                    return true;
-                  } else {
-                    return false;
-                  }
-                "
-              >
-                <div class="form-group" style="margin-top: 2rem">
-                  <label for="firstName">First Name</label>
-                  <input
-                    type="text"
-                    id="firstName"
-                    name="entry.1545251936"
-                    required
-                  />
-                </div>
-                <div class="form-group" style="margin-top: 2rem">
-                  <label for="firstName">Last Name</label>
-                  <input
-                    type="text"
-                    id="firstName"
-                    name="entry.1795900201"
-                    required
-                  />
-                </div>
-                <div class="form-group" style="margin-top: 2rem">
-                  <label for="email">Email Address</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="entry.1643563046"
-                    required
-                  />
-                </div>
-                <div class="form-group" style="margin-top: 2rem">
-                  <label for="message">Message</label>
-                  <textarea
-                    id="message"
-                    name="entry.1297400486"
-                    rows="5"
-                    placeholder="Tell us how we can help you..."
-                  ></textarea>
-                </div>
+  <form id="gform" onsubmit="handleFormSubmit(event)">
+    <input type="hidden" name="access_key" value="66469d30-3566-42fe-a853-2d5a0404a9b5" />
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-                <div
-                  class="g-recaptcha"
-                  style="margin-top: 1rem"
-                  data-sitekey="6LfzvhQsAAAAAP__ohUkmKgkCjVGIdlFR4xpuIQ8"
-                ></div>
+    <div class="form-group" style="margin-top: 2rem">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="first_name" required />
+    </div>
 
-                <span class="span-gamer-flex">
-                  <button
-                    type="submit"
-                    class="btn btn-primary btn-lg btn-padding-primary"
-                    style="margin-top: 2rem"
-                  >
-                    Send
-                  </button>
+    <div class="form-group" style="margin-top: 2rem">
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="last_name" required />
+    </div>
 
-                  <p style="margin-top: 2rem" id="status"></p>
-                </span>
-              </form>
-            </div>
+    <div class="form-group" style="margin-top: 2rem">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+
+    <div class="form-group" style="margin-top: 2rem">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+    </div>
+
+    <div class="h-captcha" data-captcha="true" style="margin-top: 1.5rem;"></div>
+
+    <span class="span-gamer-flex">
+      <button type="submit" class="btn btn-primary btn-lg btn-padding-primary" style="margin-top: 2rem">
+        Send
+      </button>
+      <p style="margin-top: 2rem" id="status"></p>
+    </span>
+  </form>
+             </div>
+
 
             <div class="contact-info-section">
               <div class="contact-info contact-flex-colume">
@@ -6981,6 +6943,61 @@
       }
     </style>
 
+      <script src="https://web3forms.com/client/script.js" async defer></script>
+
+    <script>
+    async function handleFormSubmit(event) {
+    event.preventDefault();
+    const status = document.getElementById("status");
+    const form = event.target;
+    
+    
+    const hCaptcha = form.querySelector('textarea[name="h-captcha-response"]');
+    if (!hCaptcha || hCaptcha.value === "") {
+      status.innerText = "⚠️ Please complete the captcha.";
+      status.style.color = "orange";
+      return;
+    }
+
+    status.innerText = "⏳ Sending...";
+    status.style.color = "blue";
+
+    const formData = new FormData(form);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: json
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        status.innerText = "✅ Response submitted successfully!";
+        status.style.color = "green";
+        form.reset();
+        hcaptcha.reset(); 
+      } else {
+        status.innerText = "❌ Error: " + result.message;
+        status.style.color = "red";
+      }
+    } catch (error) {
+      status.innerText = "❌ Network Error. Try again.";
+      status.style.color = "red";
+    }
+
+    setTimeout(() => {
+      status.innerText = "";
+    }, 4000);
+  }
+    </script>
+
     <script>
       const customAlert = document.getElementById("customAlert");
       let alertTimeout;
@@ -7148,6 +7165,9 @@
       </div>
     </div>
 
+
+    
+
     <script>
       const openBtns = document.querySelectorAll(".openModal");
       const modal = document.getElementById("registerModal");
@@ -7248,7 +7268,7 @@
 
     <script src="js/script2.js"></script>
 
-    <script>
+    <!-- <script>
       let submitted = false;
       function showMessage() {
         if (submitted) {
@@ -7262,7 +7282,7 @@
         }
       }
       document.getElementById("hidden_iframe").onload = showMessage;
-    </script>
+    </script> -->
 
     <script>
       const tabBtns = document.querySelectorAll(".tab-btn1");
@@ -7299,7 +7319,7 @@
 
         window.scrollTo({
           top: 0,
-          behavior: "smooth", // smooth scrolling (agar instantly chahiye to hata do)
+          behavior: "smooth", 
         });
       }
     </script>
@@ -7362,7 +7382,7 @@
 
     <script>
       const button = document.getElementById("backToTop");
-      // Show button when scrolling down
+      
       window.addEventListener("scroll", () => {
         if (window.scrollY > 200) {
           button.classList.add("show");
@@ -7391,19 +7411,19 @@
 
     <!-- captcha code js  -->
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 
-    <script>
+    <!-- <script>
       function validateCaptcha() {
         const response = grecaptcha.getResponse();
         if (!response) {
           document.getElementById("status").innerText =
             "⚠️ Please verify that you are not a robot.";
-          return false; // stop form submission
+          return false; 
         }
         document.getElementById("status").innerText = "✅ Submitting...";
-        return true; // allow form to submit
+        return true; 
       }
-    </script>
+    </script> -->
   </body>
 </html>
