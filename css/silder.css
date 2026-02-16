@@ -522,6 +522,7 @@ html {
   background-color: #1f1f1f80 !important;
   font-weight: 300 !important;
   padding: 0.7rem 2rem !important;
+  cursor: pointer !important;
 }
 
 .display-none {
