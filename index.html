@@ -42,6 +42,7 @@
   </head>
 
   <body style="background-color: black;">
+
     <div id="customAlert" class="custom-alert">
       <div class="custom-alert-box">
         <h3>⚠️ Content Protected</h3>
@@ -50,10 +51,8 @@
       </div>
     </div>
 
-    <div
-      class="new-landing-container-outer tab-content-landing active"
-      id="tab1"
-    >
+    <div class="new-landing-container-outer tab-content-landing active" id="tab1"
+>
       <div class="header-logo-login">
         <div
           style="
@@ -636,9 +635,11 @@
         <div class="contact-grid contact-grid-contact">
 
            <div class="contact-form-section ">
+
               <h2 class="section-title text-start color-text-style ">Get in Touch</h2>
 
               <form class="background-color-form" id="gform" onsubmit="handleFormSubmit(event)">
+
                 <input
                   type="hidden"
                   name="access_key"
@@ -651,7 +652,10 @@
                   style="display: none"
                 />
 
-                <div class="form-group" style="margin-top: 2rem">
+
+                <div class="input-filed-container">
+
+                    <div class="form-group" style="margin-top: 2rem">
                   <label for="firstName">First Name</label>
                   <input
                     type="text"
@@ -666,6 +670,9 @@
                   <input type="text" id="lastName" name="last_name" required />
                 </div>
 
+                </div>
+
+              
                 <div class="form-group" style="margin-top: 2rem">
                   <label for="email">Email Address</label>
                   <input type="email" id="email" name="email" required />
@@ -676,7 +683,7 @@
                   <textarea
                     id="message"
                     name="message"
-                    rows="5"
+                    rows="4"
                     placeholder="Tell us how we can help you..."
                     required
                   ></textarea>
@@ -709,7 +716,8 @@
               muted=""
               loop=""
               playsinline=""
-            ></video>
+            >
+          </video>
           </div>
         </div>
       </div>
@@ -1027,37 +1035,6 @@
 
       // arrow btn bottom
     </script>
-
-    <!-- captcha code js  -->
-
-    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
-
-    <!-- <script>
-      function validateCaptcha() {
-        const response = grecaptcha.getResponse();
-        if (!response) {
-          document.getElementById("status").innerText =
-            "⚠️ Please verify that you are not a robot.";
-          return false; // stop form submission
-        }
-        document.getElementById("status").innerText = "✅ Submitting...";
-        return true; // allow form to submit
-      }
-    </script> -->
-
-   <!-- 
-    <script>
-      function validateCaptcha() {
-        const response = grecaptcha.getResponse();
-        if (!response) {
-          document.getElementById("status").innerText =
-            "⚠️ Please verify that you are not a robot.";
-          return false; // stop form submission
-        }
-        document.getElementById("status").innerText = "✅ Submitting...";
-        return true;
-      }
-    </script> -->
 
     <script>
       document.querySelectorAll("img").forEach((img) => {
