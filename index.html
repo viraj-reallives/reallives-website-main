@@ -38,11 +38,22 @@
       rel="stylesheet"
     />
 
+      <meta
+      property="og:image"
+      content="https://res.cloudinary.com/dexw6sglh/image/upload/v1771840605/reallives-logo_v5cdkc.png"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://res.cloudinary.com/dexw6sglh/image/upload/v1771840605/reallives-logo_v5cdkc.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+
+
     <title>RealLives Foundation</title>
   </head>
 
-  <body style="background-color: black;">
-
+  <body style="background-color: black">
+    
     <div id="customAlert" class="custom-alert">
       <div class="custom-alert-box">
         <h3>⚠️ Content Protected</h3>
@@ -51,8 +62,10 @@
       </div>
     </div>
 
-    <div class="new-landing-container-outer tab-content-landing active" id="tab1"
->
+    <div
+      class="new-landing-container-outer tab-content-landing active"
+      id="tab1"
+    >
       <div class="header-logo-login">
         <div
           style="
@@ -622,7 +635,8 @@
         </div>
       </div>
 
-      <div class="button-back-container flex-center fixed-position-button button-fix-black"
+      <div
+        class="button-back-container flex-center fixed-position-button button-fix-black"
       >
         <a class="text-decoration-none" href="index.html">
           <button class="back-button-style">Back</button>
@@ -632,30 +646,33 @@
 
     <div class="outer-contact-us-tab tab-content-landing" id="tab3">
       <div class="container padding-contact-right-left">
+
         <div class="contact-grid contact-grid-contact">
+          <div class="contact-form-section">
+            <h2 class="section-title text-start color-text-style">
+              Get in Touch
+            </h2>
 
-           <div class="contact-form-section ">
+            <form
+              class="background-color-form"
+              id="gform"
+              onsubmit="handleFormSubmit(event)"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="66469d30-3566-42fe-a853-2d5a0404a9b5"
+              />
 
-              <h2 class="section-title text-start color-text-style ">Get in Touch</h2>
+              <input
+                type="checkbox"
+                name="botcheck"
+                class="hidden"
+                style="display: none"
+              />
 
-              <form class="background-color-form" id="gform" onsubmit="handleFormSubmit(event)">
-
-                <input
-                  type="hidden"
-                  name="access_key"
-                  value="66469d30-3566-42fe-a853-2d5a0404a9b5"
-                />
-                <input
-                  type="checkbox"
-                  name="botcheck"
-                  class="hidden"
-                  style="display: none"
-                />
-
-
-                <div class="input-filed-container">
-
-                    <div class="form-group" style="margin-top: 2rem">
+              <div class="input-filed-container">
+                <div class="form-group" style="margin-top: 2rem">
                   <label for="firstName">First Name</label>
                   <input
                     type="text"
@@ -669,46 +686,54 @@
                   <label for="lastName">Last Name</label>
                   <input type="text" id="lastName" name="last_name" required />
                 </div>
+              </div>
 
-                </div>
+              <div class="form-group" style="margin-top: 2rem">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+              </div>
 
-              
-                <div class="form-group" style="margin-top: 2rem">
-                  <label for="email">Email Address</label>
-                  <input type="email" id="email" name="email" required />
-                </div>
+              <div class="form-group" style="margin-top: 2rem">
 
-                <div class="form-group" style="margin-top: 2rem">
-                  <label for="message">Message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="4"
-                    placeholder="Tell us how we can help you..."
-                    required
-                  ></textarea>
-                </div>
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Tell us how we can help you..."
+                  required
+                >
+              </textarea>
+              </div>
 
-                <div
-                  class="h-captcha"
-                  data-captcha="true"
-                  style="margin-top: 1.5rem"
-                ></div>
-
-                <span class="span-gamer-flex">
-                  <button
-                    type="submit"
-                    class="btn btn-primary btn-lg btn-padding-primary send-btn"
-                    style="margin-top: 2rem"
-                  >
-                    Send
-                  </button>
-                  <p style="margin-top: 2rem" id="status"></p>
-                </span>
-              </form>
+              <div
+                class="h-captcha"
+                data-captcha="true"
+                style="margin-top: 1.5rem"
+              >
             </div>
 
+              <span class="span-gamer-flex">
+
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-lg btn-padding-primary send-btn"
+                  style="margin-top: 2rem"
+                >
+                  Send
+
+                </button>
+
+                <p style="margin-top: 2rem" id="status"></p>
+
+              </span>
+
+            </form>
+
+          </div>
+
           <div class="video-contact-section">
+
             <video
               class="video-contact"
               src="https://reallivesfrontend.s3.us-east-1.amazonaws.com/Copy+of+RL+STEM+(Your+Story)-2.mp4"
@@ -718,7 +743,9 @@
               playsinline=""
             >
           </video>
+
           </div>
+
         </div>
       </div>
 
@@ -736,6 +763,7 @@
     <!-- tab 3 -->
 
     <style>
+
       body {
         top: 0px !important;
       }
@@ -801,11 +829,13 @@
       body {
         font-family: sans-serif;
       }
+
     </style>
 
-     <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 
     <script>
+
       async function handleFormSubmit(event) {
         event.preventDefault();
         const status = document.getElementById("status");
@@ -858,7 +888,6 @@
         }, 4000);
       }
     </script>
-
 
     <script>
 
@@ -1034,9 +1063,11 @@
       // });
 
       // arrow btn bottom
+
     </script>
 
     <script>
+
       document.querySelectorAll("img").forEach((img) => {
         img.addEventListener("dragstart", function (e) {
           e.preventDefault();
@@ -1051,6 +1082,7 @@
           e.preventDefault();
         }
       });
+
     </script>
 
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
