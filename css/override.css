@@ -3016,7 +3016,6 @@ img {
 }
 
 @media (min-width: 350px) and (max-width: 800px) {
-
   .slider-box-container {
     padding: 10px;
   }
@@ -3797,6 +3796,7 @@ img {
 .span-gamer-flex {
   display: flex;
   align-items: center;
+  /* justify-content: center; */
   gap: 1rem;
 }
 
@@ -4133,7 +4133,9 @@ img {
   width: 16px;
   aspect-ratio: 1;
   background: #3fb8af;
-  animation: l2-1 2s infinite, l2-2 1s infinite;
+  animation:
+    l2-1 2s infinite,
+    l2-2 1s infinite;
 }
 
 .loader:after {
@@ -4351,10 +4353,6 @@ img {
   font-size: 16px;
   color: #444444;
   text-align: start;
-}
-
-.impact-image-card {
-  /* padding: 1rem; */
 }
 
 .span-imapct-colume {
@@ -4750,7 +4748,9 @@ img {
   gap: 2rem;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
   z-index: 1001;
 }
 
@@ -4814,7 +4814,7 @@ img {
 }
 
 .left-box-chnage-maker-research {
-  width: 50%;
+  width: 72%;
   text-align: start;
   padding-left: 5rem;
   display: flex;
@@ -4833,7 +4833,7 @@ img {
   font-weight: 500;
   font-size: 50px;
   color: #ffffff;
-  line-height: 60px;
+  line-height: 67px;
 }
 
 .research-description-text {
@@ -4949,7 +4949,7 @@ img {
 
 .position-relative-12 {
   position: relative;
-  top: 12%;
+  /* top: 12%; */
 }
 
 /* Existing button styles */
@@ -4981,7 +4981,7 @@ img {
   height: 100%;
 }
 
-.hight-pdf-btn{
+.hight-pdf-btn {
   height: 100%;
 }
 
@@ -5027,33 +5027,32 @@ img {
   height:20px;
 } */
 
-.pdf-img{
+.pdf-img {
   width: 25px;
   height: 25px;
 }
 
-.pdf-img>img{
+.pdf-img > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
- .web-pdf-btn{
+.web-pdf-btn {
   display: block;
- }
+}
 
-.mobile-pdf-download{
+.mobile-pdf-download {
   display: none;
 }
 
-.wrapper-inner-pdf{
+.wrapper-inner-pdf {
   display: flex;
   align-items: center;
   gap: 10px;
-
 }
 
-.wrapper-description-title-main{
+.wrapper-description-title-main {
   width: 100%;
   display: flex;
   align-items: center;
@@ -5062,13 +5061,308 @@ img {
   gap: 1rem;
 }
 
-.wrapper-title-pdf{
+.wrapper-title-pdf {
   display: flex;
   justify-content: space-between;
   width: 50%;
 }
 
 /* Research & Evidence end css  */
+
+/* New Research & Evidence css  */
+
+.new-structure-content-research-wrapper {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.firstcontent-research-tab {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #abf4ff 0%, #1793a5 72.6%);
+  padding: 8rem 7rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.content-sub-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.content-sub-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* .content-sub-container-inner{
+  border: 1px solid red;
+} */
+
+.research-backed-text {
+  font-weight: 500;
+  font-size: 49px;
+  color: white;
+  line-height: 60px;
+}
+
+.research-backed-descritpion {
+  font-weight: 500;
+  font-size: 19px;
+  color: #f2f2f2;
+}
+
+.browse-peer-reviewed {
+  width: 100%;
+  /* height: 100vh; */
+  /* background-color: lightgreen; */
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+  padding: 2rem 5rem;
+}
+
+.top-browse-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.top-browse-content > p {
+  font-weight: 500;
+  font-size: 28px;
+  color: #111111;
+}
+
+.browse-card-container {
+  padding: 2rem 2rem;
+  background-color: #f7f7f7;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.browse-card-inner {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 1rem;
+  box-shadow: 0px 0px 8px 0px #00000040;
+  background-color: #fcfcfc;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.head-korea-university-color {
+  background: linear-gradient(90deg, #ead0a4 33.65%, #7c0019 100%);
+}
+
+.uwe-bristol-university-color {
+  background: linear-gradient(90deg, #e30f18 34%, #6c4573 100%);
+}
+
+.santa-clara-university-color {
+  background: linear-gradient(90deg, #750927 34%, #b30738 69.71%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.university-albany-color {
+  background: linear-gradient(90deg, #e5a316 33.65%, #88610e 86.79%);
+}
+
+.individual-research-university-color {
+  background: linear-gradient(90deg, #14bcd4 0%, #0a626e 100%);
+  display: flex;
+  align-items: center;
+}
+
+.head-card-inner-browse {
+  height: 86px;
+  padding: 7px;
+  padding: 0rem 1rem;
+  position: relative;
+}
+
+.mid-content-browse-inner {
+  padding: 0rem 1.4rem;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.button-explore-browse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.browse-logo {
+  height: 100%;
+  width: 200px;
+}
+
+.browse-logo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.explore-btn-browse {
+  padding: 0.7rem 1rem;
+  font-weight: 500;
+  font-size: 18px;
+  color: #222222;
+  gap: 8px;
+  border: none;
+  border-radius: 6px;
+}
+
+.explore-btn-browse:hover {
+  background-color: #1397fc;
+  color: white;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.logo-head-3 {
+  width: 70px;
+  height: 100%;
+}
+
+.padding-10px {
+  padding: 10px;
+}
+
+.logo-head-3 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logo-head-2 {
+  width: 125px;
+  height: 100%;
+}
+.logo-head-2 > img {
+  width: 100%;
+  height: 100%;
+}
+
+.santa-clara-text {
+  font-weight: 500;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.University-Albany-logo {
+  width: 250px !important;
+}
+
+/* css card show hide  */
+
+.research2-hidden {
+  display: none !important;
+}
+
+.research2-single-content {
+  width: 100vw;
+}
+
+.research2-back-btn {
+  position: absolute;
+  top: 7%;
+  left: 2%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.arrow-font-card {
+  font-size: 1.3rem !important;
+}
+
+.absolute-styel-class {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+}
+
+.web-show-style {
+  display: block;
+}
+
+.mobile-show-style {
+  display: none;
+}
+
+/* css card show hide  */
+
+/* New Research & Evidence end css  */
+
+.custom-alert {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(4px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.custom-alert-box {
+  background: #ffffff;
+  padding: 24px 40px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  animation: pop 0.35s ease;
+  min-width: 300px;
+}
+
+.custom-alert-box h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1b4332; /* dark green */
+}
+
+.custom-alert-box p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #3a5a40;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.8) translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
 
 @media screen and (min-width: 2560px) and (max-width: 3500px) {
   .logo-icon-reallives > img {
@@ -5825,9 +6119,6 @@ img {
 }
 
 @media (max-width: 1728px) {
-
-
-
   .wrapper-outer-container-priving {
     padding-top: 3rem;
   }
@@ -5917,11 +6208,14 @@ img {
 }
 
 @media (max-width: 1440px) {
+  .browse-peer-reviewed {
+    padding: 2rem 2rem;
+  }
 
   .position-relative-12 {
-      position: relative;
-      top: 0%;
-    }
+    position: relative;
+    top: 0%;
+  }
 
   .getting-started-container {
     padding: 2rem 9rem;
@@ -6139,47 +6433,64 @@ img {
 }
 
 @media (max-width: 1368px) {
+  .research-title-first {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .research2-back-btn {
+    top: 5.5%;
+    left: 2%;
+  }
+
+  .research-description-text {
+    font-size: 25px;
+  }
+
+  .browse-peer-reviewed {
+    padding: 2rem 0rem;
+  }
 
   .wrapper-title-pdf {
-      width: 55%;
-    }
-  
-    .research-highlight-description {
-      width: 55%;
-    }
+    width: 55%;
+  }
+
+  .research-highlight-description {
+    width: 55%;
+  }
 
   /* research css  */
-  
-    .korea-university-container {
-      padding: 1rem 3rem;
-    }
-  
-    .position-relative-12 {
-      position: relative;
-      top: 12%;
-    }
-  
-    .logo-korea-university {
-      height: 55px;
-    }
-  
-    .bring-school-btn {
-      font-size: 16px;
-    }
-  
-    .read-pdf-btn {
-      font-size: 16px;
-    }
-  
-    .research-container-image {
-      padding: 1rem 4rem;
-    }
-  
-    .left-box-chnage-maker-research {
-      width: 58%;
-    }
-  
-    /* research css   */
+
+  .korea-university-container {
+    padding: 1rem 3rem;
+  }
+
+  .position-relative-12 {
+    position: relative;
+    top: 12%;
+  }
+
+  .logo-korea-university {
+    height: 55px;
+  }
+
+  .bring-school-btn {
+    font-size: 16px;
+  }
+
+  .read-pdf-btn {
+    font-size: 16px;
+  }
+
+  .research-container-image {
+    padding: 1rem 4rem;
+  }
+
+  .left-box-chnage-maker-research {
+    width: 58%;
+  }
+
+  /* research css   */
 
   .modal-register {
     width: 38%;
@@ -6409,45 +6720,88 @@ img {
 }
 
 @media (max-width: 1280px) {
+  .research-title-first {
+    font-size: 33px;
+    line-height: 48px;
+  }
+
+  .research2-back-btn {
+    top: 5.5%;
+    left: 2%;
+  }
+
+  .research-description-text {
+    font-size: 17px;
+  }
+
+  .footer {
+    padding-top: 1rem !important;
+  }
+
+  .firstcontent-research-tab {
+    padding: 2rem 1rem;
+  }
+
+  .browse-peer-reviewed {
+    padding: 0rem 0rem;
+  }
+
+  .browse-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 1rem;
+  }
+
+  .research-backed-text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .research-backed-descritpion {
+    font-size: 18px;
+  }
+
+  .top-browse-content > p {
+    font-size: 20px;
+  }
 
   .wrapper-title-pdf {
-      width: 55%;
-    }
+    width: 55%;
+  }
 
-        .research-highlight-description {
-          width: 55%;
-        }
+  .research-highlight-description {
+    width: 55%;
+  }
 
   /* research css  */
 
-  .korea-university-container{
+  .korea-university-container {
     padding: 1rem 3rem;
   }
 
-  .position-relative-12{
-   position: relative;
-   top: 1%;
-   }
+  .position-relative-12 {
+    position: relative;
+    top: 1%;
+  }
 
   .logo-korea-university {
-   height: 50px;
+    height: 50px;
   }
 
   .bring-school-btn {
-  font-size: 15px;
+    font-size: 15px;
   }
 
   .read-pdf-btn {
-  font-size: 15px;
+    font-size: 15px;
   }
 
   .research-container-image {
-  padding: 1rem 4rem;
+    padding: 1rem 4rem;
   }
 
-    .left-box-chnage-maker-research {
-      width: 63%;
-    }
+  .left-box-chnage-maker-research {
+    width: 63%;
+  }
 
   /* research css   */
 
@@ -6732,96 +7086,130 @@ img {
 }
 
 @media (max-width: 1180px) {
+  .research2-back-btn {
+    top: 5.5%;
+    left: 2%;
+  }
+
+  .footer {
+    padding-top: 1rem !important;
+  }
+
+  .firstcontent-research-tab {
+    padding: 2rem 1rem;
+  }
+
+  .browse-peer-reviewed {
+    padding: 0rem 0rem;
+  }
+
+  .browse-card-container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 1rem;
+  }
+
+  .research-backed-text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .research-backed-descritpion {
+    font-size: 18px;
+  }
+
+  .top-browse-content > p {
+    font-size: 20px;
+  }
 
   .wrapper-title-pdf {
-      width: 70%;
-    }
+    width: 70%;
+  }
 
   /* research-css  */
-  
-    .pdf-show-button-container {
-      flex-direction: row;
-    }
-  
-    .peer-reviewed-text {
-      font-size: 16px;
-    }
-  
-    .download-text-font {
-      font-size: 17px !important;
-    }
-  
-    .gap-10px {
-      gap: 5px;
-    }
-  
-    .logo-korea-university {
-      height: 43px;
-    }
-  
-    .research-highlight-title {
-      font-size: 23px;
-    }
-  
-    .research-highlight-description {
-      width: 70%;
-      font-size: 18px;
-    }
-  
-    .title-content-left {
-      font-size: 20px;
-    }
-  
-    .data-content-university {
-      padding: 1rem 10px;
-    }
-  
-    .description-content-title {
-      font-size: 17px;
-    }
-  
-    .bottom-university-box {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .position-relative-12 {
-      top: 11%;
-    }
-  
-    .read-pdf-btn {
-      font-size: 14px;
-    }
-  
-    .bring-school-btn {
-      font-size: 14px;
-    }
-  
-    .korea-university-container {
-      padding: 1rem 1rem;
-    }
-  
-    .research-container-image {
-      padding: 1rem 5rem;
-      padding-bottom: 1rem;
-    }
-  
-    .research-title-first {
-      font-size: 33px;
-      line-height: 48px;
-    }
-  
-    .left-box-chnage-maker-research {
-      width: 55%;
-      padding-left: 0rem;
-      gap: 2rem;
-    }
-  
-    .research-description-text {
-      font-size: 17px;
-    }
-  
-    /* research-css  */
-  
+
+  .pdf-show-button-container {
+    flex-direction: row;
+  }
+
+  .peer-reviewed-text {
+    font-size: 16px;
+  }
+
+  .download-text-font {
+    font-size: 17px !important;
+  }
+
+  .gap-10px {
+    gap: 5px;
+  }
+
+  .logo-korea-university {
+    height: 43px;
+  }
+
+  .research-highlight-title {
+    font-size: 23px;
+  }
+
+  .research-highlight-description {
+    width: 70%;
+    font-size: 18px;
+  }
+
+  .title-content-left {
+    font-size: 20px;
+  }
+
+  .data-content-university {
+    padding: 1rem 10px;
+  }
+
+  .description-content-title {
+    font-size: 17px;
+  }
+
+  .bottom-university-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .position-relative-12 {
+    top: 11%;
+  }
+
+  .read-pdf-btn {
+    font-size: 14px;
+  }
+
+  .bring-school-btn {
+    font-size: 14px;
+  }
+
+  .korea-university-container {
+    padding: 1rem 1rem;
+  }
+
+  .research-container-image {
+    padding: 1rem 5rem;
+    padding-bottom: 1rem;
+  }
+
+  .research-title-first {
+    font-size: 33px;
+    line-height: 48px;
+  }
+
+  .left-box-chnage-maker-research {
+    width: 55%;
+    padding-left: 0rem;
+    gap: 2rem;
+  }
+
+  .research-description-text {
+    font-size: 17px;
+  }
+
+  /* research-css  */
+
   .modal-register {
     width: 42%;
   }
@@ -7168,107 +7556,141 @@ img {
 }
 
 @media (max-width: 1104px) {
+  .research2-back-btn {
+    top: 5.5%;
+    left: 2%;
+  }
+
+  .footer {
+    padding-top: 1rem !important;
+  }
+
+  .firstcontent-research-tab {
+    padding: 2rem 1rem;
+  }
+
+  .browse-peer-reviewed {
+    padding: 0rem 0rem;
+  }
+
+  .browse-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 1rem;
+  }
+
+  .research-backed-text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .research-backed-descritpion {
+    font-size: 18px;
+  }
+
+  .top-browse-content > p {
+    font-size: 20px;
+  }
 
   .wrapper-title-pdf {
-      width: 70%;
-    }
+    width: 70%;
+  }
 
   .footer-content {
-      grid-template-columns: auto auto auto auto !important;
-    }
+    grid-template-columns: auto auto auto auto !important;
+  }
 
   /* research-css  */
-  
-    .pdf-show-button-container {
-      flex-direction: row;
-    }
-  
-    .peer-reviewed-text {
-      font-size: 16px;
-    }
-  
-    .download-text-font {
-      font-size: 17px !important;
-    }
-  
-    .gap-10px {
-      gap: 5px;
-    }
-  
-    .logo-korea-university {
-      height: 43px;
-    }
-  
-    .research-highlight-title {
-      font-size: 23px;
-    }
-  
-    .research-highlight-description {
-      width: 70%;
-      font-size: 16px;
-    }
-  
-    .title-content-left {
-      font-size: 18px;
-    }
-  
-    .data-content-university {
-      padding: 1rem 10px;
-    }
-  
-    .description-content-title {
-      font-size: 16px;
-    }
-  
-    .bottom-university-box {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .position-relative-12 {
-      top: 0%;
-    }
-  
-    .read-pdf-btn {
-      font-size: 13px;
-    }
-  
-    .bring-school-btn {
-      font-size: 13px;
-    }
-  
-    .korea-university-container {
-      padding: 1rem 1rem;
-    }
-  
-    .research-container-image {
-      padding: 1rem 5rem;
-      padding-bottom: 1rem;
-    }
-  
-    .research-title-first {
-      font-size: 33px;
-      line-height: 48px;
-    }
-  
-    .left-box-chnage-maker-research {
-      width: 55%;
-      padding-left: 0rem;
-      gap: 3rem;
-    }
-  
-    .research-description-text {
-      font-size: 17px;
-    }
-  
-    /* research-css  */
 
-  .about-contact-section{
+  .pdf-show-button-container {
+    flex-direction: row;
+  }
+
+  .peer-reviewed-text {
+    font-size: 16px;
+  }
+
+  .download-text-font {
+    font-size: 17px !important;
+  }
+
+  .gap-10px {
+    gap: 5px;
+  }
+
+  .logo-korea-university {
+    height: 43px;
+  }
+
+  .research-highlight-title {
+    font-size: 23px;
+  }
+
+  .research-highlight-description {
+    width: 70%;
+    font-size: 16px;
+  }
+
+  .title-content-left {
+    font-size: 18px;
+  }
+
+  .data-content-university {
+    padding: 1rem 10px;
+  }
+
+  .description-content-title {
+    font-size: 16px;
+  }
+
+  .bottom-university-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .position-relative-12 {
+    top: 0%;
+  }
+
+  .read-pdf-btn {
+    font-size: 13px;
+  }
+
+  .bring-school-btn {
+    font-size: 13px;
+  }
+
+  .korea-university-container {
+    padding: 1rem 1rem;
+  }
+
+  .research-container-image {
+    padding: 1rem 5rem;
+    padding-bottom: 1rem;
+  }
+
+  .research-title-first {
+    font-size: 33px;
+    line-height: 48px;
+  }
+
+  .left-box-chnage-maker-research {
+    width: 55%;
+    padding-left: 0rem;
+    gap: 3rem;
+  }
+
+  .research-description-text {
+    font-size: 17px;
+  }
+
+  /* research-css  */
+
+  .about-contact-section {
     display: none !important;
   }
 
   .slider-wed-none {
-      display: block;
-    }
+    display: block;
+  }
   .modal-register {
     width: 44%;
   }
@@ -7600,8 +8022,6 @@ img {
 }
 
 @media (min-width: 1024px) {
-
-
   .slider-wed-none {
     display: block;
   }
@@ -7612,103 +8032,137 @@ img {
 }
 
 @media (max-width: 1024px) {
+  .research2-back-btn {
+    top: 5%;
+    left: 2%;
+  }
+
+  .footer {
+    padding-top: 1rem !important;
+  }
+
+  .firstcontent-research-tab {
+    padding: 2rem 1rem;
+  }
+
+  .browse-peer-reviewed {
+    padding: 0rem 0rem;
+  }
+
+  .browse-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 1rem;
+  }
+
+  .research-backed-text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .research-backed-descritpion {
+    font-size: 14px;
+  }
+
+  .top-browse-content > p {
+    font-size: 20px;
+  }
 
   .wrapper-title-pdf {
     width: 70%;
   }
 
   .footer-content {
-      grid-template-columns: auto auto auto auto !important;
-    }
+    grid-template-columns: auto auto auto auto !important;
+  }
 
-    /* research-css  */
-    
-      .pdf-show-button-container {
-        flex-direction: row;
-      }
-    
-      .peer-reviewed-text {
-        font-size: 16px;
-      }
-    
-      .download-text-font {
-        font-size: 17px !important;
-      }
-    
-      .gap-10px {
-        gap: 5px;
-      }
-    
-      .logo-korea-university {
-        height: 43px;
-      }
-    
-      .research-highlight-title {
-        font-size: 23px;
-      }
-    
-      .research-highlight-description {
-        width: 70%;
-        font-size: 16px;
-      }
-    
-      .title-content-left {
-        font-size: 18px;
-      }
-    
-      .data-content-university {
-        padding: 1rem 10px;
-      }
-    
-      .description-content-title {
-        font-size: 16px;
-      }
-    
-      .bottom-university-box {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    
-      .position-relative-12 {
-        top: 0%;
-      }
-    
-      .read-pdf-btn {
-        font-size: 13px;
-      }
-    
-      .bring-school-btn {
-        font-size: 13px;
-      }
-    
-      .korea-university-container {
-        padding: 1rem 1rem;
-      }
-    
-      .research-container-image {
-        padding: 1rem 5rem;
-        padding-bottom: 1rem;
-      }
-    
-      .research-title-first {
-      font-size: 33px;
-      line-height: 48px;
-      }
-    
-      .left-box-chnage-maker-research {
-        width: 55%;
-        padding-left: 0rem;
-        gap: 2rem;
-      }
-    
-      .research-description-text {
-        font-size: 17px;
-      }
-    
-      /* research-css  */
+  /* research-css  */
+
+  .pdf-show-button-container {
+    flex-direction: row;
+  }
+
+  .peer-reviewed-text {
+    font-size: 16px;
+  }
+
+  .download-text-font {
+    font-size: 17px !important;
+  }
+
+  .gap-10px {
+    gap: 5px;
+  }
+
+  .logo-korea-university {
+    height: 43px;
+  }
+
+  .research-highlight-title {
+    font-size: 23px;
+  }
+
+  .research-highlight-description {
+    width: 70%;
+    font-size: 16px;
+  }
+
+  .title-content-left {
+    font-size: 18px;
+  }
+
+  .data-content-university {
+    padding: 1rem 10px;
+  }
+
+  .description-content-title {
+    font-size: 16px;
+  }
+
+  .bottom-university-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .position-relative-12 {
+    top: 0%;
+  }
+
+  .read-pdf-btn {
+    font-size: 13px;
+  }
+
+  .bring-school-btn {
+    font-size: 13px;
+  }
+
+  .korea-university-container {
+    padding: 1rem 1rem;
+  }
+
+  .research-container-image {
+    padding: 1rem 5rem;
+    padding-bottom: 1rem;
+  }
+
+  .research-title-first {
+    font-size: 33px;
+    line-height: 48px;
+  }
+
+  .left-box-chnage-maker-research {
+    width: 55%;
+    padding-left: 0rem;
+    gap: 2rem;
+  }
+
+  .research-description-text {
+    font-size: 17px;
+  }
+
+  /* research-css  */
 
   .about-contact-section {
-      display: none !important;
-    }
+    display: none !important;
+  }
 
   .modal-register {
     width: 44%;
@@ -8062,113 +8516,147 @@ img {
 }
 
 @media (max-width: 991px) {
+  .research2-back-btn {
+    top: 5%;
+    left: 2%;
+  }
+
+  .footer {
+    padding-top: 1rem !important;
+  }
+
+  .firstcontent-research-tab {
+    padding: 2rem 1rem;
+  }
+
+  .browse-peer-reviewed {
+    padding: 0rem 0rem;
+  }
+
+  .browse-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 1rem;
+  }
+
+  .research-backed-text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .research-backed-descritpion {
+    font-size: 14px;
+  }
+
+  .top-browse-content > p {
+    font-size: 20px;
+  }
+
   .peer-reviewed-container {
-      padding: 2rem;
-    }
-  
-    .wrapper-description-title-main {
-      flex-direction: column;
-    }
-  
-    .wrapper-title-pdf {
-      gap: 1rem;
-      flex-direction: row;
-      width: 100%;
-      align-items: center;
-    }
+    padding: 2rem;
+  }
+
+  .wrapper-description-title-main {
+    flex-direction: column;
+  }
+
+  .wrapper-title-pdf {
+    gap: 1rem;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  }
 
   .footer-content {
-      grid-template-columns: auto auto auto auto !important;
-    }
-    /* research-css  */
-    
-      .pdf-show-button-container {
-        flex-direction: row;
-      }
-    
-      .peer-reviewed-text {
-        font-size: 16px;
-      }
-    
-      .download-text-font {
-        font-size: 17px !important;
-      }
-    
-      .gap-10px {
-        gap: 5px;
-      }
-    
-      .logo-korea-university {
-        height: 43px;
-      }
-    
-      .research-highlight-title {
-        font-size: 18px;
-      }
-    
-      .research-highlight-description {
-        width: 100%;
-        font-size: 16px;
-      }
-    
-      .title-content-left {
-        font-size: 18px;
-      }
-    
-      .data-content-university {
-        padding: 1rem 10px;
-      }
-    
-      .description-content-title {
-        font-size: 16px;
-      }
-    
-      .bottom-university-box {
-        grid-template-columns: repeat(2,1fr);
-      }
-    
-      .position-relative-12 {
-        top: 0%;
-      }
-    
-      .read-pdf-btn {
-        font-size: 13px;
-      }
-    
-      .bring-school-btn {
-        font-size: 13px;
-      }
-    
-      .korea-university-container {
-        padding: 1rem 1rem;
-      }
-    
-      .research-container-image {
-        padding: 1rem 5rem;
-        padding-bottom: 1rem;
-      }
-    
-      .research-title-first {
-        font-size: 27px;
-        line-height: 36px;
-      }
-    
-    
-      .left-box-chnage-maker-research {
-        width: 58%;
-        padding-left: 0rem;
-        gap: 1rem;
-      }
-    
-      .research-description-text {
-        font-size: 17px;
-      }
-    
-      /* research-css  */
+    grid-template-columns: auto auto auto auto !important;
+  }
+  /* research-css  */
+
+  .pdf-show-button-container {
+    flex-direction: row;
+  }
+
+  .peer-reviewed-text {
+    font-size: 16px;
+  }
+
+  .download-text-font {
+    font-size: 17px !important;
+  }
+
+  .gap-10px {
+    gap: 5px;
+  }
+
+  .logo-korea-university {
+    height: 43px;
+  }
+
+  .research-highlight-title {
+    font-size: 18px;
+  }
+
+  .research-highlight-description {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .title-content-left {
+    font-size: 18px;
+  }
+
+  .data-content-university {
+    padding: 1rem 10px;
+  }
+
+  .description-content-title {
+    font-size: 16px;
+  }
+
+  .bottom-university-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .position-relative-12 {
+    top: 0%;
+  }
+
+  .read-pdf-btn {
+    font-size: 13px;
+  }
+
+  .bring-school-btn {
+    font-size: 13px;
+  }
+
+  .korea-university-container {
+    padding: 1rem 1rem;
+  }
+
+  .research-container-image {
+    padding: 1rem 5rem;
+    padding-bottom: 1rem;
+  }
+
+  .research-title-first {
+    font-size: 27px;
+    line-height: 36px;
+  }
+
+  .left-box-chnage-maker-research {
+    width: 58%;
+    padding-left: 0rem;
+    gap: 1rem;
+  }
+
+  .research-description-text {
+    font-size: 17px;
+  }
+
+  /* research-css  */
 
   .about-contact-section {
-      display: none;
-    }
+    display: none;
+  }
 
   .modal-register {
     width: 50%;
@@ -8582,130 +9070,169 @@ img {
 }
 
 @media (max-width: 800px) {
+  .research2-back-btn {
+    top: 4%;
+  }
+
+  .web-show-style {
+    display: none;
+  }
+
+  .mobile-show-style {
+    display: block;
+  }
+
+  .footer {
+    padding-top: 1rem !important;
+  }
+
+  .firstcontent-research-tab {
+    padding: 2rem 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .browse-peer-reviewed {
+    padding: 0rem 0rem;
+  }
+
+  .browse-card-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .research-backed-text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .research-backed-descritpion {
+    font-size: 14px;
+  }
+
+  .top-browse-content > p {
+    font-size: 20px;
+  }
 
   .peer-reviewed-container {
-      padding: 2rem;
-    }
-  
-    .wrapper-description-title-main {
-      flex-direction: column;
-    }
-  
-    .wrapper-title-pdf {
-      gap: 1rem;
-      flex-direction: row;
-      width: 100%;
-      align-items: center;
-    }
+    padding: 2rem;
+  }
+
+  .wrapper-description-title-main {
+    flex-direction: column;
+  }
+
+  .wrapper-title-pdf {
+    gap: 1rem;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  }
 
   .footer-content {
-      grid-template-columns:1fr !important;
-      padding-left: 1rem;
-    }
+    grid-template-columns: 1fr !important;
+    padding-left: 1rem;
+  }
 
-    .footer-content-1 {
+  .footer-content-1 {
     place-items: start !important;
-    }
-
+  }
 
   .hidden-scrren-big {
-   display: block;
+    display: block;
   }
-    
-  .about-contact-section{
+
+  .about-contact-section {
     display: none;
   }
 
   /* research-css  */
-  
-    .pdf-show-button-container {
-      flex-direction: row;
-    }
-  
-    .peer-reviewed-text {
-      font-size: 16px;
-    }
-  
-    .download-text-font {
-      font-size: 17px !important;
-    }
-  
-    .gap-10px {
-      gap: 5px;
-    }
-  
-    .logo-korea-university {
-      height: 40px;
-    }
-  
-    .research-highlight-title {
-      font-size: 18px;
-    }
-  
-    .research-highlight-description {
-      width: 100%;
-      font-size: 16px;
-    }
-  
-    .title-content-left {
-      font-size: 18px;
-    }
-  
-    .data-content-university {
-      padding: 1rem 10px;
-    }
-  
-    .description-content-title {
-      font-size: 16px;
-    }
-  
-    .border-right-content-university {
-      border-right: none;
-    }
-  
-    .bottom-university-box {
-      grid-template-columns: 1fr;
-    }
-  
-    .position-relative-12 {
-      top: 5%;
-    }
-  
-    .read-pdf-btn {
-      font-size: 13px;
-    }
-  
-    .bring-school-btn {
-      font-size: 13px;
-    }
-  
-    .korea-university-container {
-      padding: 1rem 1rem;
-    }
-  
-    .research-container-image {
-      padding: 1rem 3rem;
-      padding-bottom: 1rem;
-    }
-  
-    .research-title-first {
-      font-size: 27px;
-      line-height: 36px;
-    }
-  
-  
-    .left-box-chnage-maker-research {
-      width: 100%;
-      padding-left: 0rem;
-      gap: 1rem;
-    }
-  
-    .research-description-text {
-      font-size: 17px;
-    }
-  
-    /* research-css  */
-  
+
+  .pdf-show-button-container {
+    flex-direction: row;
+  }
+
+  .peer-reviewed-text {
+    font-size: 16px;
+  }
+
+  .download-text-font {
+    font-size: 17px !important;
+  }
+
+  .gap-10px {
+    gap: 5px;
+  }
+
+  .logo-korea-university {
+    height: 40px;
+  }
+
+  .research-highlight-title {
+    font-size: 18px;
+  }
+
+  .research-highlight-description {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .title-content-left {
+    font-size: 18px;
+  }
+
+  .data-content-university {
+    padding: 1rem 10px;
+  }
+
+  .description-content-title {
+    font-size: 16px;
+  }
+
+  .border-right-content-university {
+    border-right: none;
+  }
+
+  .bottom-university-box {
+    grid-template-columns: 1fr;
+  }
+
+  .position-relative-12 {
+    top: 5%;
+  }
+
+  .read-pdf-btn {
+    font-size: 13px;
+  }
+
+  .bring-school-btn {
+    font-size: 13px;
+  }
+
+  .korea-university-container {
+    padding: 1rem 1rem;
+  }
+
+  .research-container-image {
+    padding: 1rem 3rem;
+    padding-bottom: 1rem;
+  }
+
+  .research-title-first {
+    font-size: 27px;
+    line-height: 36px;
+  }
+
+  .left-box-chnage-maker-research {
+    width: 100%;
+    padding-left: 0rem;
+    gap: 1rem;
+  }
+
+  .research-description-text {
+    font-size: 17px;
+  }
+
+  /* research-css  */
 
   .modal-register {
     width: 55%;
@@ -8995,32 +9522,74 @@ img {
 }
 
 @media (max-width: 770px) {
-
-  .peer-reviewed-container {
-      padding: 2rem;
-    }
-  
-    .wrapper-description-title-main {
-      flex-direction: column;
-    }
-  
-    .wrapper-title-pdf {
-      gap: 1rem;
-      flex-direction: row;
-      width: 100%;
-      align-items: center;
-    }
-
-  .footer-content {
-      grid-template-columns: 1fr !important;
-      padding-left: 1rem;
-    }
-
-  .footer-content-1 {
-  place-items: start !important;
+  .research2-back-btn {
+    top: 3.6%;
   }
 
-/* research-css  */
+  .web-show-style {
+    display: none;
+  }
+
+  .mobile-show-style {
+    display: block;
+  }
+
+  .footer {
+    padding-top: 1rem !important;
+  }
+
+  .firstcontent-research-tab {
+    padding: 2rem 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .browse-peer-reviewed {
+    padding: 0rem 0rem;
+  }
+
+  .browse-card-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .research-backed-text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .research-backed-descritpion {
+    font-size: 17px;
+  }
+
+  .top-browse-content > p {
+    font-size: 20px;
+  }
+
+  .peer-reviewed-container {
+    padding: 2rem;
+  }
+
+  .wrapper-description-title-main {
+    flex-direction: column;
+  }
+
+  .wrapper-title-pdf {
+    gap: 1rem;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr !important;
+    padding-left: 1rem;
+  }
+
+  .footer-content-1 {
+    place-items: start !important;
+  }
+
+  /* research-css  */
 
   .pdf-show-button-container {
     flex-direction: row;
@@ -9097,7 +9666,6 @@ img {
     font-size: 27px;
     line-height: 36px;
   }
-
 
   .left-box-chnage-maker-research {
     width: 100%;
@@ -9235,125 +9803,166 @@ img {
 }
 
 @media (max-width: 700px) {
+  .research2-back-btn {
+    top: 3.6%;
+  }
+
+  .web-show-style {
+    display: none;
+  }
+
+  .mobile-show-style {
+    display: block;
+  }
+
+  .footer {
+    padding-top: 1rem !important;
+  }
+
+  .firstcontent-research-tab {
+    padding: 2rem 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .browse-peer-reviewed {
+    padding: 0rem 0rem;
+  }
+
+  .browse-card-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .research-backed-text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .research-backed-descritpion {
+    font-size: 16px;
+  }
+
+  .top-browse-content > p {
+    font-size: 20px;
+  }
 
   .peer-reviewed-container {
-      padding: 2rem;
-    }
-  
-    .wrapper-description-title-main {
-      flex-direction: column;
-    }
-  
-    .wrapper-title-pdf {
-      gap: 1rem;
-      flex-direction: row;
-      width: 100%;
-      align-items: center;
-    }
+    padding: 2rem;
+  }
+
+  .wrapper-description-title-main {
+    flex-direction: column;
+  }
+
+  .wrapper-title-pdf {
+    gap: 1rem;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  }
 
   .mobile-pdf-download {
-      display: block;
-    }
+    display: block;
+  }
 
   .web-pdf-btn {
-      display: none;
-    }
+    display: none;
+  }
 
   .footer-content {
-      grid-template-columns: 1fr !important;
-      padding-left: 1rem;
-    }
+    grid-template-columns: 1fr !important;
+    padding-left: 1rem;
+  }
 
   /* research-css  */
-  
-    .pdf-show-button-container {
-      flex-direction: row;
-    }
-  
-    .peer-reviewed-text {
-      font-size: 16px;
-    }
-  
-    .download-text-font {
-      display: none;
-    }
-  
-    .gap-10px {
-      gap: 5px;
-    }
-  
-    .logo-korea-university {
-      height: 43px;
-    }
-  
-    .research-highlight-title {
-      font-size: 18px;
-    }
-  
-    .research-highlight-description {
-      width: 100%;
-      font-size: 16px;
-    }
-  
-    .title-content-left {
-      font-size: 18px;
-    }
-  
-    .data-content-university {
-      padding: 1rem 10px;
-    }
-  
-    .description-content-title {
-      font-size: 16px;
-    }
-  
-    .border-right-content-university {
-      border-right: none;
-    }
-  
-    .bottom-university-box {
-      grid-template-columns: 1fr;
-    }
-  
-    .position-relative-12 {
-      top: 5%;
-    }
-  
-    .read-pdf-btn {
-      font-size: 13px;
-    }
-  
-    .bring-school-btn {
-      font-size: 13px;
-      padding: 0.8rem 1rem;
-    }
-  
-    .korea-university-container {
-      padding: 1rem 1rem;
-    }
-  
-    .research-container-image {
-      padding: 1rem 2rem;
-      padding-bottom: 1rem;
-    }
-  
-    .research-title-first {
-      font-size: 27px;
-      line-height: 36px;
-    }
-  
-  
-    .left-box-chnage-maker-research {
-      width: 100%;
-      padding-left: 0rem;
-      gap: 1rem;
-    }
-  
-    .research-description-text {
-      font-size: 17px;
-    }
-  
-    /* research-css  */
+
+  .pdf-show-button-container {
+    flex-direction: row;
+  }
+
+  .peer-reviewed-text {
+    font-size: 16px;
+  }
+
+  .download-text-font {
+    display: none;
+  }
+
+  .gap-10px {
+    gap: 5px;
+  }
+
+  .logo-korea-university {
+    height: 43px;
+  }
+
+  .research-highlight-title {
+    font-size: 18px;
+  }
+
+  .research-highlight-description {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .title-content-left {
+    font-size: 18px;
+  }
+
+  .data-content-university {
+    padding: 1rem 10px;
+  }
+
+  .description-content-title {
+    font-size: 16px;
+  }
+
+  .border-right-content-university {
+    border-right: none;
+  }
+
+  .bottom-university-box {
+    grid-template-columns: 1fr;
+  }
+
+  .position-relative-12 {
+    top: 5%;
+  }
+
+  .read-pdf-btn {
+    font-size: 13px;
+  }
+
+  .bring-school-btn {
+    font-size: 13px;
+    padding: 0.8rem 1rem;
+  }
+
+  .korea-university-container {
+    padding: 1rem 1rem;
+  }
+
+  .research-container-image {
+    padding: 1rem 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .research-title-first {
+    font-size: 27px;
+    line-height: 36px;
+  }
+
+  .left-box-chnage-maker-research {
+    width: 100%;
+    padding-left: 0rem;
+    gap: 1rem;
+  }
+
+  .research-description-text {
+    font-size: 17px;
+  }
+
+  /* research-css  */
 
   .text-align-center-mobile {
     text-align: center;
@@ -9716,127 +10325,168 @@ img {
 }
 
 @media (max-width: 650px) {
+  .research2-back-btn {
+    top: 3.4%;
+  }
+
+  .web-show-style {
+    display: none;
+  }
+
+  .mobile-show-style {
+    display: block;
+  }
+
+  .footer {
+    padding-top: 1rem !important;
+  }
+
+  .firstcontent-research-tab {
+    padding: 2rem 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .browse-peer-reviewed {
+    padding: 0rem 0rem;
+  }
+
+  .browse-card-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .research-backed-text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .research-backed-descritpion {
+    font-size: 14px;
+  }
+
+  .top-browse-content > p {
+    font-size: 20px;
+  }
 
   .peer-reviewed-container {
-      padding: 2rem;
-    }
-  
-    .wrapper-description-title-main {
-      flex-direction: column;
-    }
-  
-    .wrapper-title-pdf {
-      gap: 1rem;
-      flex-direction: row;
-      width: 100%;
-      align-items: center;
-    }
+    padding: 2rem;
+  }
+
+  .wrapper-description-title-main {
+    flex-direction: column;
+  }
+
+  .wrapper-title-pdf {
+    gap: 1rem;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  }
 
   .mobile-pdf-download {
-      display: block;
-    }
+    display: block;
+  }
 
   .web-pdf-btn {
-      display: none;
-    }
+    display: none;
+  }
 
   .footer-content {
-      grid-template-columns: 1fr !important;
-      padding-left: 1rem;
-    }
+    grid-template-columns: 1fr !important;
+    padding-left: 1rem;
+  }
 
   /* research-css  */
-  
-    .pdf-show-button-container {
-      flex-direction: row;
-    }
-  
-    .peer-reviewed-text {
-      font-size: 16px;
-    }
-  
-    .download-text-font {
-      display: none;
-    }
-  
-    .gap-10px {
-      gap: 5px;
-    }
-  
-    .logo-korea-university {
-      height: 45px;
-      width: 130px;
-    }
-  
-    .research-highlight-title {
-      font-size: 18px;
-    }
-  
-    .research-highlight-description {
-      width: 100%;
-      font-size: 16px;
-    }
-  
-    .title-content-left {
-      font-size: 18px;
-    }
-  
-    .data-content-university {
-      padding: 1rem 10px;
-    }
-  
-    .description-content-title {
-      font-size: 16px;
-    }
-  
-    .border-right-content-university {
-      border-right: none;
-    }
-  
-    .bottom-university-box {
-      grid-template-columns: 1fr;
-    }
-  
-    .position-relative-12 {
-      top: 5%;
-    }
-  
-    .read-pdf-btn {
-      font-size: 13px;
-    }
-  
-    .bring-school-btn {
-      font-size: 13px;
-      padding: 0.8rem 1rem;
-    }
-  
-    .korea-university-container {
-      padding: 1rem 1rem;
-    }
-  
-    .research-container-image {
-      padding: 1rem 1rem;
-      padding-bottom: 1rem;
-    }
-  
-    .research-title-first {
-      font-size: 27px;
-      line-height: 36px;
-    }
-  
-  
-    .left-box-chnage-maker-research {
-      width: 100%;
-      padding-left: 0rem;
-      gap: 1rem;
-    }
-  
-    .research-description-text {
-      font-size: 17px;
-    }
-  
-    /* research-css  */
-  
+
+  .pdf-show-button-container {
+    flex-direction: row;
+  }
+
+  .peer-reviewed-text {
+    font-size: 16px;
+  }
+
+  .download-text-font {
+    display: none;
+  }
+
+  .gap-10px {
+    gap: 5px;
+  }
+
+  .logo-korea-university {
+    height: 45px;
+    width: 130px;
+  }
+
+  .research-highlight-title {
+    font-size: 18px;
+  }
+
+  .research-highlight-description {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .title-content-left {
+    font-size: 18px;
+  }
+
+  .data-content-university {
+    padding: 1rem 10px;
+  }
+
+  .description-content-title {
+    font-size: 16px;
+  }
+
+  .border-right-content-university {
+    border-right: none;
+  }
+
+  .bottom-university-box {
+    grid-template-columns: 1fr;
+  }
+
+  .position-relative-12 {
+    top: 5%;
+  }
+
+  .read-pdf-btn {
+    font-size: 13px;
+  }
+
+  .bring-school-btn {
+    font-size: 13px;
+    padding: 0.8rem 1rem;
+  }
+
+  .korea-university-container {
+    padding: 1rem 1rem;
+  }
+
+  .research-container-image {
+    padding: 1rem 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .research-title-first {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .left-box-chnage-maker-research {
+    width: 100%;
+    padding-left: 0rem;
+    gap: 1rem;
+  }
+
+  .research-description-text {
+    font-size: 17px;
+  }
+
+  /* research-css  */
+
   .text-align-center-mobile {
     text-align: center;
   }
@@ -10229,130 +10879,171 @@ img {
 }
 
 @media (max-width: 570px) {
+  .research2-back-btn {
+    top: 5%;
+  }
+
+  .web-show-style {
+    display: none;
+  }
+
+  .mobile-show-style {
+    display: block;
+  }
+
+  .footer {
+    padding-top: 1rem !important;
+  }
+
+  .firstcontent-research-tab {
+    padding: 2rem 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .browse-peer-reviewed {
+    padding: 0rem 0rem;
+  }
+
+  .browse-card-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .research-backed-text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .research-backed-descritpion {
+    font-size: 14px;
+  }
+
+  .top-browse-content > p {
+    font-size: 20px;
+  }
 
   .ressearch-evidence-container {
-      height: 80vh;
-    }
+    height: 80vh;
+  }
 
   .peer-reviewed-container {
-      padding: 2rem;
-    }
-  
-    .wrapper-description-title-main {
-      flex-direction: column;
-    }
-  
-    .wrapper-title-pdf {
-      gap: 1rem;
-      flex-direction: row;
-      width: 100%;
-      align-items: center;
-    }
+    padding: 2rem;
+  }
+
+  .wrapper-description-title-main {
+    flex-direction: column;
+  }
+
+  .wrapper-title-pdf {
+    gap: 1rem;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  }
 
   .mobile-pdf-download {
-      display: block;
-    }
+    display: block;
+  }
 
   .web-pdf-btn {
-      display: none;
-    }
+    display: none;
+  }
 
   .footer-content {
-      grid-template-columns: 1fr !important;
-      padding-left: 1rem;
-    }
+    grid-template-columns: 1fr !important;
+    padding-left: 1rem;
+  }
 
   /* research-css  */
 
   .pdf-show-button-container {
-      flex-direction: row;
-    }
-  
-    .peer-reviewed-text {
-      font-size: 16px;
-    }
-  
-    .download-text-font {
-      display: none;
-    }
-  
-    .gap-10px {
-      gap: 5px;
-    }
-  
-    .logo-korea-university {
-      height: 43px;
-      width: 130px;
-    }
-  
-    .research-highlight-title {
-      font-size: 18px;
-    }
-  
-    .research-highlight-description {
-      width: 100%;
-      font-size: 16px;
-    }
-  
-    .title-content-left {
-      font-size: 18px;
-    }
-  
-    .data-content-university {
-      padding: 1rem 10px;
-    }
-  
-    .description-content-title {
-      font-size: 16px;
-    }
-  
-    .border-right-content-university {
-      border-right: none;
-    }
-  
-    .bottom-university-box {
-      grid-template-columns: 1fr;
-    }
-  
-    .position-relative-12 {
-      top: 5%;
-    }
-  
-    .read-pdf-btn {
-      font-size: 13px;
-    }
-  
-    .bring-school-btn {
-      font-size: 13px;
-      padding: 0.8rem 1rem;
-    }
-  
-    .korea-university-container {
-      padding: 1rem 1rem;
-    }
-  
-    .research-container-image {
-      padding: 1rem 1rem;
-      padding-bottom: 1rem;
-    }
-  
-    .research-title-first {
-      font-size: 27px;
-       line-height: 36px;
-      }
-    
-  
-    .left-box-chnage-maker-research {
-      width: 100%;
-      padding-left: 0rem;
-      gap:1rem;
-    }
-  
-    .research-description-text {
-      font-size: 17px;
-    }
-  
-    /* research-css  */
+    flex-direction: row;
+  }
+
+  .peer-reviewed-text {
+    font-size: 16px;
+  }
+
+  .download-text-font {
+    display: none;
+  }
+
+  .gap-10px {
+    gap: 5px;
+  }
+
+  .logo-korea-university {
+    height: 43px;
+    width: 130px;
+  }
+
+  .research-highlight-title {
+    font-size: 18px;
+  }
+
+  .research-highlight-description {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .title-content-left {
+    font-size: 18px;
+  }
+
+  .data-content-university {
+    padding: 1rem 10px;
+  }
+
+  .description-content-title {
+    font-size: 16px;
+  }
+
+  .border-right-content-university {
+    border-right: none;
+  }
+
+  .bottom-university-box {
+    grid-template-columns: 1fr;
+  }
+
+  .position-relative-12 {
+    top: 5%;
+  }
+
+  .read-pdf-btn {
+    font-size: 13px;
+  }
+
+  .bring-school-btn {
+    font-size: 13px;
+    padding: 0.8rem 1rem;
+  }
+
+  .korea-university-container {
+    padding: 1rem 1rem;
+  }
+
+  .research-container-image {
+    padding: 1rem 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .research-title-first {
+    font-size: 27px;
+    line-height: 36px;
+  }
+
+  .left-box-chnage-maker-research {
+    width: 100%;
+    padding-left: 0rem;
+    gap: 1rem;
+  }
+
+  .research-description-text {
+    font-size: 17px;
+  }
+
+  /* research-css  */
 
   .text-align-center-mobile {
     text-align: center;
@@ -10751,128 +11442,170 @@ img {
 }
 
 @media (max-width: 530px) {
+  .research2-back-btn {
+    top: 5%;
+  }
+
+  .web-show-style {
+    display: none;
+  }
+
+  .mobile-show-style {
+    display: block;
+  }
+
+  .footer {
+    padding-top: 1rem !important;
+  }
+
+  .firstcontent-research-tab {
+    padding: 2rem 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .browse-peer-reviewed {
+    padding: 0rem 0rem;
+  }
+
+  .browse-card-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .research-backed-text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .research-backed-descritpion {
+    font-size: 14px;
+  }
+
+  .top-browse-content > p {
+    font-size: 20px;
+  }
 
   .ressearch-evidence-container {
-      height: 70vh;
-    }
+    height: 70vh;
+  }
 
   .peer-reviewed-container {
-      padding: 2rem;
-    }
-  
-    .wrapper-description-title-main {
-      flex-direction: column;
-    }
-  
-    .wrapper-title-pdf {
-      gap: 1rem;
-      flex-direction: column;
-      width: 100%;
-      align-items: center;
-    }
+    padding: 2rem;
+  }
+
+  .wrapper-description-title-main {
+    flex-direction: column;
+  }
+
+  .wrapper-title-pdf {
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 
   .mobile-pdf-download {
-      display: block;
-    }
+    display: block;
+  }
 
   .web-pdf-btn {
-      display: none;
-    }
+    display: none;
+  }
 
   .footer-content {
-      grid-template-columns: 1fr !important;
-      padding-left: 1rem;
-    }
+    grid-template-columns: 1fr !important;
+    padding-left: 1rem;
+  }
 
   /* research-css  */
 
   .pdf-show-button-container {
-      flex-direction: row;
-    }
-  
-    .peer-reviewed-text {
-      font-size: 13px;
-    }
-  
-    .download-text-font {
+    flex-direction: row;
+  }
+
+  .peer-reviewed-text {
+    font-size: 13px;
+  }
+
+  .download-text-font {
     display: none;
-    }
-  
-    .gap-10px {
-      gap: 5px;
-    }
-  
-    .logo-korea-university {
-      height: 40px;
-      width: 120px;
-    }
-  
-    .research-highlight-title {
-      font-size: 18px;
-    }
-  
-    .research-highlight-description {
-      width: 100%;
-      font-size: 13px;
-    }
-  
-    .title-content-left {
-      font-size: 16px;
-    }
-  
-    .data-content-university {
-      padding: 1rem 10px;
-    }
-  
-    .description-content-title {
-      font-size: 14px;
-    }
-  
-    .border-right-content-university {
-      border-right: none;
-    }
-  
-    .bottom-university-box {
-      grid-template-columns: 1fr;
-    }
-  
-    .position-relative-12 {
-      top: 5%;
-    }
-  
-    .read-pdf-btn {
-      font-size: 13px;
-    }
-  
-    .bring-school-btn {
-      font-size: 13px;
-    }
-  
-    .korea-university-container {
-      padding: 1rem 1rem;
-    }
-  
-    .research-container-image {
-      padding: 1rem 1rem;
-      padding-bottom: 1rem;
-    }
-  
-    .research-title-first {
-      font-size: 25px;
-      line-height: 35px;
-    }
-  
-    .left-box-chnage-maker-research {
-      width: 100%;
-      padding-left: 0rem;
-      gap: 1.4rem;
-    }
-  
-    .research-description-text {
-      font-size: 16px;
-    }
-  
-    /* research-css  */
+  }
+
+  .gap-10px {
+    gap: 5px;
+  }
+
+  .logo-korea-university {
+    height: 40px;
+    width: 120px;
+  }
+
+  .research-highlight-title {
+    font-size: 18px;
+  }
+
+  .research-highlight-description {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .title-content-left {
+    font-size: 16px;
+  }
+
+  .data-content-university {
+    padding: 1rem 10px;
+  }
+
+  .description-content-title {
+    font-size: 14px;
+  }
+
+  .border-right-content-university {
+    border-right: none;
+  }
+
+  .bottom-university-box {
+    grid-template-columns: 1fr;
+  }
+
+  .position-relative-12 {
+    top: 5%;
+  }
+
+  .read-pdf-btn {
+    font-size: 13px;
+  }
+
+  .bring-school-btn {
+    font-size: 13px;
+  }
+
+  .korea-university-container {
+    padding: 1rem 1rem;
+  }
+
+  .research-container-image {
+    padding: 1rem 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .research-title-first {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .left-box-chnage-maker-research {
+    width: 100%;
+    padding-left: 0rem;
+    gap: 1.4rem;
+  }
+
+  .research-description-text {
+    font-size: 16px;
+  }
+
+  /* research-css  */
   .text-align-center-mobile {
     text-align: center;
   }
@@ -11304,128 +12037,170 @@ img {
 }
 
 @media (max-width: 480px) {
+  .web-show-style {
+    display: none;
+  }
+
+  .mobile-show-style {
+    display: block;
+  }
+
+  .research2-back-btn {
+    top: 4%;
+  }
+
+  .footer {
+    padding-top: 1rem !important;
+  }
+
+  .firstcontent-research-tab {
+    padding: 2rem 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .browse-peer-reviewed {
+    padding: 0rem 0rem;
+  }
+
+  .browse-card-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .research-backed-text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .research-backed-descritpion {
+    font-size: 14px;
+  }
+
+  .top-browse-content > p {
+    font-size: 20px;
+  }
 
   .ressearch-evidence-container {
-      height: 70vh;
-    }
+    height: 70vh;
+  }
 
   .peer-reviewed-container {
-      padding: 2rem;
-    }
-  
-    .wrapper-description-title-main {
-      flex-direction: column;
-    }
-  
-    .wrapper-title-pdf {
-      gap: 1rem;
-      flex-direction: column;
-      width: 100%;
-      align-items: center;
-    }
+    padding: 2rem;
+  }
+
+  .wrapper-description-title-main {
+    flex-direction: column;
+  }
+
+  .wrapper-title-pdf {
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 
   .mobile-pdf-download {
-      display: block;
-    }
+    display: block;
+  }
 
   .web-pdf-btn {
-      display: none;
-    }
+    display: none;
+  }
 
   .footer-content {
-      grid-template-columns: 1fr !important;
-      padding-left: 1rem;
-    }
+    grid-template-columns: 1fr !important;
+    padding-left: 1rem;
+  }
 
   /* research-css  */
 
   .pdf-show-button-container {
-      flex-direction: row;
-    }
-  
-    .peer-reviewed-text {
-      font-size: 13px;
-    }
-  
-    .download-text-font {
-      display: none;
-    }
-  
-    .gap-10px {
-      gap: 5px;
-    }
-  
-    .logo-korea-university {
-      height: 40px;
-      width: 120px;
-    }
-  
-    .research-highlight-title {
-      font-size: 18px;
-    }
-  
-    .research-highlight-description {
-      width: 100%;
-      font-size: 13px;
-    }
-  
-    .title-content-left {
-      font-size: 16px;
-    }
-  
-    .data-content-university {
-      padding: 1rem 10px;
-    }
-  
-    .description-content-title {
-      font-size: 14px;
-    }
-  
-    .border-right-content-university {
-      border-right: none;
-    }
-  
-    .bottom-university-box {
-      grid-template-columns: 1fr;
-    }
-  
-    .position-relative-12 {
-      top: 5%;
-    }
-  
-    .read-pdf-btn {
-      font-size: 13px;
-    }
-  
-    .bring-school-btn {
-      font-size: 13px;
-    }
-  
-    .korea-university-container {
-      padding: 1rem 1rem;
-    }
-  
-    .research-container-image {
-      padding: 1rem 1rem;
-      padding-bottom: 1rem;
-    }
-  
-    .research-title-first {
-      font-size: 25px;
-      line-height: 40px;
-    }
-  
-    .left-box-chnage-maker-research {
-      width: 100%;
-      padding-left: 0rem;
-      gap: 1.4rem;
-    }
-  
-    .research-description-text {
-      font-size: 16px;
-    }
-  
-    /* research-css  */
+    flex-direction: row;
+  }
+
+  .peer-reviewed-text {
+    font-size: 13px;
+  }
+
+  .download-text-font {
+    display: none;
+  }
+
+  .gap-10px {
+    gap: 5px;
+  }
+
+  .logo-korea-university {
+    height: 40px;
+    width: 120px;
+  }
+
+  .research-highlight-title {
+    font-size: 18px;
+  }
+
+  .research-highlight-description {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .title-content-left {
+    font-size: 16px;
+  }
+
+  .data-content-university {
+    padding: 1rem 10px;
+  }
+
+  .description-content-title {
+    font-size: 14px;
+  }
+
+  .border-right-content-university {
+    border-right: none;
+  }
+
+  .bottom-university-box {
+    grid-template-columns: 1fr;
+  }
+
+  .position-relative-12 {
+    top: 5%;
+  }
+
+  .read-pdf-btn {
+    font-size: 13px;
+  }
+
+  .bring-school-btn {
+    font-size: 13px;
+  }
+
+  .korea-university-container {
+    padding: 1rem 1rem;
+  }
+
+  .research-container-image {
+    padding: 1rem 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .research-title-first {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  .left-box-chnage-maker-research {
+    width: 100%;
+    padding-left: 0rem;
+    gap: 1.4rem;
+  }
+
+  .research-description-text {
+    font-size: 16px;
+  }
+
+  /* research-css  */
   .text-align-center-mobile {
     text-align: center;
   }
@@ -11861,132 +12636,174 @@ img {
 }
 
 @media (max-width: 450px) {
+  .web-show-style {
+    display: none;
+  }
+
+  .mobile-show-style {
+    display: block;
+  }
+
+  .research2-back-btn {
+    top: 4%;
+  }
+
+  .footer {
+    padding-top: 1rem !important;
+  }
+
+  .firstcontent-research-tab {
+    padding: 2rem 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .browse-peer-reviewed {
+    padding: 0rem 0rem;
+  }
+
+  .browse-card-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .research-backed-text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .research-backed-descritpion {
+    font-size: 14px;
+  }
+
+  .top-browse-content > p {
+    font-size: 20px;
+  }
 
   .ressearch-evidence-container {
-      height: 70vh;
-    }
+    height: 70vh;
+  }
 
   .peer-reviewed-container {
-      padding: 2rem;
-    }
-  
-    .wrapper-description-title-main {
-      flex-direction: column;
-    }
-  
-    .wrapper-title-pdf {
-      gap: 1rem;
-      flex-direction: column;
-      width: 100%;
-      align-items: center;
-    }
+    padding: 2rem;
+  }
+
+  .wrapper-description-title-main {
+    flex-direction: column;
+  }
+
+  .wrapper-title-pdf {
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 
   .mobile-pdf-download {
-      display: block;
-    }
+    display: block;
+  }
 
   .web-pdf-btn {
-      display: none;
-    }
+    display: none;
+  }
 
   .hight-pdf-btn {
-      height: min-content;
-    }
+    height: min-content;
+  }
 
   .footer-content {
-      grid-template-columns: 1fr !important;
-      padding-left: 1rem;
-    }
+    grid-template-columns: 1fr !important;
+    padding-left: 1rem;
+  }
 
   /* research-css  */
 
   .pdf-show-button-container {
-      flex-direction: column;
-    }
-  
-    .peer-reviewed-text {
-      font-size: 13px;
-    }
-  
-    .download-text-font {
-      display: none;
-    }
-  
-    .gap-10px {
-      gap: 5px;
-    }
-  
-    .logo-korea-university {
-      height: 35px;
-      width: 115px;
-    }
-  
-    .research-highlight-title {
-      font-size: 18px;
-    }
-  
-    .research-highlight-description {
-      width: 100%;
-      font-size: 13px;
-    }
-  
-    .title-content-left {
-      font-size: 16px;
-    }
-  
-    .data-content-university {
-      padding: 1rem 10px;
-    }
-  
-    .description-content-title {
-      font-size: 14px;
-    }
-  
-    .border-right-content-university {
-      border-right: none;
-    }
-  
-    .bottom-university-box {
-      grid-template-columns: 1fr;
-    }
-  
-    .position-relative-12 {
-      top: 5%;
-    }
-  
-    .read-pdf-btn {
-      font-size: 13px;
-    }
-  
-    .bring-school-btn {
-      font-size: 13px;
-    }
-  
-    .korea-university-container {
-      padding: 1rem 1rem;
-    }
-  
-    .research-container-image {
-      padding: 1rem 1rem;
-      padding-bottom: 1rem;
-    }
-  
-    .research-title-first {
-      font-size: 25px;
-      line-height: 40px;
-    }
-  
-    .left-box-chnage-maker-research {
-      width: 100%;
-      padding-left: 0rem;
-      gap: 1.4rem;
-    }
-  
-    .research-description-text {
-      font-size: 16px;
-    }
-  
-    /* research-css  */
+    flex-direction: column;
+  }
+
+  .peer-reviewed-text {
+    font-size: 13px;
+  }
+
+  .download-text-font {
+    display: none;
+  }
+
+  .gap-10px {
+    gap: 5px;
+  }
+
+  .logo-korea-university {
+    height: 35px;
+    width: 115px;
+  }
+
+  .research-highlight-title {
+    font-size: 18px;
+  }
+
+  .research-highlight-description {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .title-content-left {
+    font-size: 16px;
+  }
+
+  .data-content-university {
+    padding: 1rem 10px;
+  }
+
+  .description-content-title {
+    font-size: 14px;
+  }
+
+  .border-right-content-university {
+    border-right: none;
+  }
+
+  .bottom-university-box {
+    grid-template-columns: 1fr;
+  }
+
+  .position-relative-12 {
+    top: 5%;
+  }
+
+  .read-pdf-btn {
+    font-size: 13px;
+  }
+
+  .bring-school-btn {
+    font-size: 13px;
+  }
+
+  .korea-university-container {
+    padding: 1rem 1rem;
+  }
+
+  .research-container-image {
+    padding: 1rem 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .research-title-first {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  .left-box-chnage-maker-research {
+    width: 100%;
+    padding-left: 0rem;
+    gap: 1.4rem;
+  }
+
+  .research-description-text {
+    font-size: 16px;
+  }
+
+  /* research-css  */
   .text-align-center-mobile {
     text-align: center;
   }
@@ -12423,132 +13240,174 @@ img {
 }
 
 @media (max-width: 440px) {
+  .web-show-style {
+    display: none;
+  }
+
+  .mobile-show-style {
+    display: block;
+  }
+
+  .research2-back-btn {
+    top: 4%;
+  }
+
+  .footer {
+    padding-top: 1rem !important;
+  }
+
+  .firstcontent-research-tab {
+    padding: 2rem 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .browse-peer-reviewed {
+    padding: 0rem 0rem;
+  }
+
+  .browse-card-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .research-backed-text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .research-backed-descritpion {
+    font-size: 14px;
+  }
+
+  .top-browse-content > p {
+    font-size: 20px;
+  }
 
   .ressearch-evidence-container {
-      height: 70vh;
-    }
+    height: 70vh;
+  }
 
   .peer-reviewed-container {
-      padding: 2rem;
-    }
-  
-    .wrapper-description-title-main {
-      flex-direction: column;
-    }
-  
-    .wrapper-title-pdf {
-      gap: 1rem;
-      flex-direction: column;
-      width: 100%;
-      align-items: center;
-    }
+    padding: 2rem;
+  }
+
+  .wrapper-description-title-main {
+    flex-direction: column;
+  }
+
+  .wrapper-title-pdf {
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 
   .mobile-pdf-download {
-      display: block;
-    }
+    display: block;
+  }
 
   .web-pdf-btn {
-      display: none;
-    }
+    display: none;
+  }
 
   .hight-pdf-btn {
-      height: min-content;
-    }
+    height: min-content;
+  }
 
   .footer-content {
-      grid-template-columns: 1fr !important;
-      padding-left: 1rem;
-    }
+    grid-template-columns: 1fr !important;
+    padding-left: 1rem;
+  }
 
   /* research-css  */
 
   .pdf-show-button-container {
-      flex-direction: column;
-    }
-  
-    .peer-reviewed-text {
-      font-size: 13px;
-    }
-  
-    .download-text-font {
-      display: none;
-    }
-  
-    .gap-10px {
-      gap: 5px;
-    }
-  
-    .logo-korea-university {
-      height: 30px;
-      width: 110px;
-    }
-  
-    .research-highlight-title {
-      font-size: 18px;
-    }
-  
-    .research-highlight-description {
-      width: 100%;
-      font-size: 13px;
-    }
-  
-    .title-content-left {
-      font-size: 16px;
-    }
-  
-    .data-content-university {
-      padding: 1rem 10px;
-    }
-  
-    .description-content-title {
-      font-size: 14px;
-    }
-  
-    .border-right-content-university {
-      border-right: none;
-    }
-  
-    .bottom-university-box {
-      grid-template-columns: 1fr;
-    }
-  
-    .position-relative-12 {
-      top: 5%;
-    }
-  
-    .read-pdf-btn {
-      font-size: 13px;
-    }
-  
-    .bring-school-btn {
-      font-size: 13px;
-    }
-  
-    .korea-university-container {
-      padding: 1rem 1rem;
-    }
-  
-    .research-container-image {
-      padding: 1rem 1rem;
-      padding-bottom: 1rem;
-    }
-  
-    .research-title-first {
-      font-size: 25px;
-      line-height: 36px;
-    }
-  
-    .left-box-chnage-maker-research {
-      width: 100%;
-      padding-left: 0rem;
-      gap: 1rem;
-    }
-  
-    .research-description-text {
-      font-size: 16px;
-    }
-  
-    /* research-css  */
+    flex-direction: column;
+  }
+
+  .peer-reviewed-text {
+    font-size: 13px;
+  }
+
+  .download-text-font {
+    display: none;
+  }
+
+  .gap-10px {
+    gap: 5px;
+  }
+
+  .logo-korea-university {
+    height: 30px;
+    width: 110px;
+  }
+
+  .research-highlight-title {
+    font-size: 18px;
+  }
+
+  .research-highlight-description {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .title-content-left {
+    font-size: 16px;
+  }
+
+  .data-content-university {
+    padding: 1rem 10px;
+  }
+
+  .description-content-title {
+    font-size: 14px;
+  }
+
+  .border-right-content-university {
+    border-right: none;
+  }
+
+  .bottom-university-box {
+    grid-template-columns: 1fr;
+  }
+
+  .position-relative-12 {
+    top: 5%;
+  }
+
+  .read-pdf-btn {
+    font-size: 13px;
+  }
+
+  .bring-school-btn {
+    font-size: 13px;
+  }
+
+  .korea-university-container {
+    padding: 1rem 1rem;
+  }
+
+  .research-container-image {
+    padding: 1rem 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .research-title-first {
+    font-size: 25px;
+    line-height: 36px;
+  }
+
+  .left-box-chnage-maker-research {
+    width: 100%;
+    padding-left: 0rem;
+    gap: 1rem;
+  }
+
+  .research-description-text {
+    font-size: 16px;
+  }
+
+  /* research-css  */
   .text-align-center-mobile {
     text-align: center;
   }
@@ -12785,132 +13644,174 @@ img {
 }
 
 @media (max-width: 400px) {
+  .web-show-style {
+    display: none;
+  }
+
+  .mobile-show-style {
+    display: block;
+  }
+
+  .research2-back-btn {
+    top: 4%;
+  }
+
+  .footer {
+    padding-top: 1rem !important;
+  }
+
+  .firstcontent-research-tab {
+    padding: 2rem 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .browse-peer-reviewed {
+    padding: 0rem 0rem;
+  }
+
+  .browse-card-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .research-backed-text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .research-backed-descritpion {
+    font-size: 14px;
+  }
+
+  .top-browse-content > p {
+    font-size: 20px;
+  }
 
   .ressearch-evidence-container {
-      height: 70vh;
-    }
+    height: 70vh;
+  }
 
   .peer-reviewed-container {
-      padding: 2rem;
-    }
-  
-    .wrapper-description-title-main {
-      flex-direction: column;
-    }
-  
-    .wrapper-title-pdf {
-      gap: 1rem;
-      flex-direction: column;
-      width: 100%;
-      align-items: center;
-    }
+    padding: 2rem;
+  }
+
+  .wrapper-description-title-main {
+    flex-direction: column;
+  }
+
+  .wrapper-title-pdf {
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 
   .mobile-pdf-download {
-      display: block;
-    }
+    display: block;
+  }
 
   .web-pdf-btn {
-      display: none;
-    }
+    display: none;
+  }
 
   .hight-pdf-btn {
-      height: min-content;
-    }
+    height: min-content;
+  }
 
   .footer-content {
-      grid-template-columns: 1fr !important;
-      padding-left: 1rem;
-    }
+    grid-template-columns: 1fr !important;
+    padding-left: 1rem;
+  }
 
   /* research-css  */
 
   .pdf-show-button-container {
-      flex-direction: column;
-    }
-  
-    .peer-reviewed-text {
-      font-size: 13px;
-    }
-  
-    .download-text-font {
-      display: none;
-    }
-  
-    .gap-10px {
-      gap: 5px;
-    }
-  
-    .logo-korea-university {
-      height: 30px;
-      width: 100px;
-    }
-  
-    .research-highlight-title {
-      font-size: 18px;
-    }
-  
-    .research-highlight-description {
-      width: 100%;
-      font-size: 13px;
-    }
-  
-    .title-content-left {
-      font-size: 16px;
-    }
-  
-    .data-content-university {
-      padding: 1rem 10px;
-    }
-  
-    .description-content-title {
-      font-size: 14px;
-    }
-  
-    .border-right-content-university {
-      border-right: none;
-    }
-  
-    .bottom-university-box {
-      grid-template-columns: 1fr;
-    }
-  
-    .position-relative-12 {
-      top: 5%;
-    }
-  
-    .read-pdf-btn {
-      font-size: 13px;
-    }
-  
-    .bring-school-btn {
-      font-size: 13px;
-    }
-  
-    .korea-university-container {
-      padding: 1rem 1rem;
-    }
-  
-    .research-container-image {
-      padding: 1rem 1rem;
-      padding-bottom: 1rem;
-    }
-  
-    .research-title-first {
-      font-size: 23px;
-      line-height: 35px;
-    }
-  
-    .left-box-chnage-maker-research {
-      width: 100%;
-      padding-left: 0rem;
-      gap: 1rem;
-    }
-  
-    .research-description-text {
-      font-size: 16px;
-    }
-  
-    /* research-css  */
+    flex-direction: column;
+  }
+
+  .peer-reviewed-text {
+    font-size: 13px;
+  }
+
+  .download-text-font {
+    display: none;
+  }
+
+  .gap-10px {
+    gap: 5px;
+  }
+
+  .logo-korea-university {
+    height: 30px;
+    width: 100px;
+  }
+
+  .research-highlight-title {
+    font-size: 18px;
+  }
+
+  .research-highlight-description {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .title-content-left {
+    font-size: 16px;
+  }
+
+  .data-content-university {
+    padding: 1rem 10px;
+  }
+
+  .description-content-title {
+    font-size: 14px;
+  }
+
+  .border-right-content-university {
+    border-right: none;
+  }
+
+  .bottom-university-box {
+    grid-template-columns: 1fr;
+  }
+
+  .position-relative-12 {
+    top: 5%;
+  }
+
+  .read-pdf-btn {
+    font-size: 13px;
+  }
+
+  .bring-school-btn {
+    font-size: 13px;
+  }
+
+  .korea-university-container {
+    padding: 1rem 1rem;
+  }
+
+  .research-container-image {
+    padding: 1rem 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .research-title-first {
+    font-size: 23px;
+    line-height: 35px;
+  }
+
+  .left-box-chnage-maker-research {
+    width: 100%;
+    padding-left: 0rem;
+    gap: 1rem;
+  }
+
+  .research-description-text {
+    font-size: 16px;
+  }
+
+  /* research-css  */
 
   .text-align-center-mobile {
     text-align: center;
@@ -13351,131 +14252,173 @@ img {
 }
 
 @media (max-width: 390px) {
+  .web-show-style {
+    display: none;
+  }
+
+  .mobile-show-style {
+    display: block;
+  }
+
+  .research2-back-btn {
+    top: 4%;
+  }
+
+  .footer {
+    padding-top: 1rem !important;
+  }
+
+  .firstcontent-research-tab {
+    padding: 2rem 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .browse-peer-reviewed {
+    padding: 0rem 0rem;
+  }
+
+  .browse-card-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .research-backed-text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .research-backed-descritpion {
+    font-size: 14px;
+  }
+
+  .top-browse-content > p {
+    font-size: 20px;
+  }
 
   .ressearch-evidence-container {
-      height: 70vh;
-    }
+    height: 70vh;
+  }
 
   .peer-reviewed-container {
-      padding: 2rem;
-    }
-  
-    .wrapper-description-title-main {
-      flex-direction: column;
-    }
-  
-    .wrapper-title-pdf {
-      gap: 1rem;
-      flex-direction: column;
-      width: 100%;
-      align-items: center;
-    }
+    padding: 2rem;
+  }
+
+  .wrapper-description-title-main {
+    flex-direction: column;
+  }
+
+  .wrapper-title-pdf {
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 
   .mobile-pdf-download {
-      display: block;
-    }
+    display: block;
+  }
 
   .web-pdf-btn {
-      display: none;
-    }
+    display: none;
+  }
 
   .hight-pdf-btn {
-      height: min-content;
-    }
+    height: min-content;
+  }
 
   .footer-content {
-      grid-template-columns: 1fr !important;
-      padding-left: 1rem;
-    }
+    grid-template-columns: 1fr !important;
+    padding-left: 1rem;
+  }
 
   /* research-css  */
 
   .pdf-show-button-container {
-      flex-direction: column;
-    }
-    .peer-reviewed-text {
-      font-size: 13px;
-    }
-  
-    .download-text-font {
+    flex-direction: column;
+  }
+  .peer-reviewed-text {
+    font-size: 13px;
+  }
+
+  .download-text-font {
     display: none;
-    }
-  
-    .gap-10px {
-      gap: 5px;
-    }
-  
-    .logo-korea-university {
-      height: 30px;
-      width: 100px;
-    }
-  
-    .research-highlight-title {
-      font-size: 18px;
-    }
-  
-    .research-highlight-description {
-      width: 100%;
-      font-size: 13px;
-    }
-  
-    .title-content-left {
-      font-size: 16px;
-    }
-  
-    .data-content-university {
-      padding: 1rem 10px;
-    }
-  
-    .description-content-title {
-      font-size: 14px;
-    }
-  
-    .border-right-content-university {
-      border-right: none;
-    }
-  
-    .bottom-university-box {
-      grid-template-columns: 1fr;
-    }
-  
-    .position-relative-12 {
-      top: 5%;
-    }
-  
-    .read-pdf-btn {
-      font-size: 13px;
-    }
-  
-    .bring-school-btn {
-      font-size: 13px;
-    }
-  
-    .korea-university-container {
-      padding: 1rem 1rem;
-    }
-  
-    .research-container-image {
-      padding: 1rem 1rem;
-      padding-bottom: 1rem;
-    }
-  
-    .research-title-first {
-      font-size: 23px;
-      line-height: 35px;
-    }
-  
-    .left-box-chnage-maker-research {
-      width: 100%;
-      padding-left: 0rem;
-      gap: 1rem;
-    }
-  
-    .research-description-text {
-      font-size: 15px;
-    }
-  
-    /* research-css  */
+  }
+
+  .gap-10px {
+    gap: 5px;
+  }
+
+  .logo-korea-university {
+    height: 30px;
+    width: 100px;
+  }
+
+  .research-highlight-title {
+    font-size: 18px;
+  }
+
+  .research-highlight-description {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .title-content-left {
+    font-size: 16px;
+  }
+
+  .data-content-university {
+    padding: 1rem 10px;
+  }
+
+  .description-content-title {
+    font-size: 14px;
+  }
+
+  .border-right-content-university {
+    border-right: none;
+  }
+
+  .bottom-university-box {
+    grid-template-columns: 1fr;
+  }
+
+  .position-relative-12 {
+    top: 5%;
+  }
+
+  .read-pdf-btn {
+    font-size: 13px;
+  }
+
+  .bring-school-btn {
+    font-size: 13px;
+  }
+
+  .korea-university-container {
+    padding: 1rem 1rem;
+  }
+
+  .research-container-image {
+    padding: 1rem 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .research-title-first {
+    font-size: 23px;
+    line-height: 35px;
+  }
+
+  .left-box-chnage-maker-research {
+    width: 100%;
+    padding-left: 0rem;
+    gap: 1rem;
+  }
+
+  .research-description-text {
+    font-size: 15px;
+  }
+
+  /* research-css  */
 
   .text-align-center-mobile {
     text-align: center;
@@ -13905,48 +14848,93 @@ img {
 }
 
 @media (max-width: 375px) {
+  /* research css  */
 
-  .ressearch-evidence-container{
+  .web-show-style {
+    display: none;
+  }
+
+  .mobile-show-style {
+    display: block;
+  }
+
+  .footer {
+    padding-top: 1rem !important;
+  }
+
+  .firstcontent-research-tab {
+    padding: 2rem 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .browse-peer-reviewed {
+    padding: 0rem 0rem;
+  }
+
+  .browse-card-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .research-backed-text {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .research-backed-descritpion {
+    font-size: 14px;
+  }
+
+  .top-browse-content > p {
+    font-size: 20px;
+  }
+
+  /* research end css  */
+
+  .research2-back-btn {
+    top: 4%;
+  }
+
+  .ressearch-evidence-container {
     height: 70vh;
   }
 
-  .peer-reviewed-container{
+  .peer-reviewed-container {
     padding: 2rem;
   }
 
-  .wrapper-description-title-main{
+  .wrapper-description-title-main {
     flex-direction: column;
   }
 
-  .wrapper-title-pdf{
+  .wrapper-title-pdf {
     gap: 1rem;
     flex-direction: column;
     width: 100%;
-    align-items:center;
+    align-items: center;
   }
 
-   .logo-korea-university {
-      height: 30px;
-      width: 100px;
-    }
-  
+  .logo-korea-university {
+    height: 30px;
+    width: 100px;
+  }
 
   .mobile-pdf-download {
-      display: block;
-    }
+    display: block;
+  }
 
-  .web-pdf-btn{
+  .web-pdf-btn {
     display: none;
   }
 
   .hight-pdf-btn {
-      height: min-content;
-    }
+    height: min-content;
+  }
 
   .footer-content {
-      grid-template-columns: 1fr !important;
-      padding-left: 1rem;
-    }
+    grid-template-columns: 1fr !important;
+    padding-left: 1rem;
+  }
 
   /* research-css  */
 
@@ -14018,7 +15006,7 @@ img {
 
   .research-title-first {
     font-size: 23px;
-     line-height: 35px;
+    line-height: 35px;
   }
 
   .left-box-chnage-maker-research {
