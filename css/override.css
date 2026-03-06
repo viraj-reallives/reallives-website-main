@@ -233,7 +233,7 @@ img {
 }
 
 .padding-header {
-  padding: 4px !important;
+  padding: 0px !important;
 }
 
 .text-width-subitle {
@@ -1571,10 +1571,10 @@ img {
 
 .dropdown-button {
   color: black;
-  padding: 10px 15px;
+  padding: 17px 15px;
   font-size: 16px;
   border: none;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -4186,7 +4186,7 @@ img {
 .about-contact-section {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
 }
 
 .max-width-100 {
@@ -5020,7 +5020,6 @@ img {
   border-radius: 6px;
 }
 
-
 .pdf-img {
   width: 25px;
   height: 25px;
@@ -5331,7 +5330,7 @@ img {
   margin: 0;
   font-size: 18px;
   font-weight: 600;
-  color: #1b4332; 
+  color: #1b4332;
 }
 
 .custom-alert-box p {
@@ -5351,122 +5350,551 @@ img {
   }
 }
 
- /* founndation css start */
+/* new start css tab  */
 
-.foundation-wrapper {
-    background-color: #f8fafc;
-    color: #1e293b;
-    padding: 60px 20px;
-    font-family: 'Inter', sans-serif;
-    margin-top: 1rem;
+#innerTab {
+  position: fixed;
+  top: 8%;
+  left: 0;
+  width: 100%;
+  /* height: 70vh; */
+  /* background-color: blue; */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
 }
 
-.foundation-hero {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 60px;
+.inner-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
 }
 
-.f-badge {
-    background: #e0f2f1;
-    color: #00acc1;
-    padding: 6px 16px;
-    border-radius: 50px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    border: 1px solid #b2ebf2;
+#changeMaker {
+  display: none;
 }
 
-.f-title {
-    font-size: 3rem;
-    margin: 20px 0;
-    color: #0f172a;
+.child-container-inner-tab {
+  /* width: 60%; */
+  height: 100%;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px;
+  gap: 1.3rem;
+  padding-right: 1.3rem;
+  position: relative;
+  left: 9%;
 }
 
-.f-highlight { color: #00acc1; }
-
-.f-desc {
-    color: #64748b;
-    font-size: 1.1rem;
-    margin-bottom: 30px;
+.image-wrapper-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.f-btn {
-    background: #00acc1;
-    color: #fff;
-    padding: 12px 30px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
+.button-degine-style {
+  padding: 0.7rem 0rem;
+  color: white;
+  border: none;
+  /* border-radius: 6px; */
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: start;
+  background-color: transparent;
+  color: black;
+}
+
+.button-change-able-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inner-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.inner-button-wrapper:hover {
+  background-color: #E0E9FD;
+}
+
+.title-click-font {
+  font-weight: 500;
+  font-size: 18px;
+  color: #333333;
+}
+
+.description-title-click-font {
+  font-weight: 400;
+  font-size: 16px;
+  color: #444444;
+}
+
+.border-bottom-inner-tab {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.resoureces-section-container {
+  width: 100%;
+}
+
+#resourceInnerTab2 {
+  position: fixed;
+  top: 8%;
+  left: 0;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+#resourcestabcontainer {
+  display: none;
+}
+
+.child-container-inner-tab-2 {
+  height: 100%;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px;
+  gap: 1.3rem;
+  padding-right: 1.3rem;
+  position: relative;
+  left: 15%;
+}
+
+.child-container-inner-tab-3 {
+  height: 100%;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px;
+  gap: 1.3rem;
+  padding-right: 1.3rem;
+  position: relative;
+  left: 15%;
+}
+
+/* .container-new-2{} */
+
+#companyTab {
+  position: fixed;
+  top: 8%;
+  left: 0;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+#aboutidtab {
+  display: none;
+}
+
+.padding-top-company {
+  padding-top: 4rem;
+  padding-bottom: 1.3rem;
+}
+
+.foundation-tab {
+  width: 100vw;
+  padding: 6rem 5rem;
+}
+
+.child-container-inner-tab-3 {
+  height: 100%;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px;
+  gap: 1.3rem;
+  padding-right: 1.3rem;
+  position: relative;
+  left: 20%;
+}
+
+.foundation-first-container {
+  width: 100%;
+  background-color: #edf8fa;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  padding: 3rem 5rem;
+}
+
+.foundation-child-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.inner-title-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: black;
+}
+
+.inner-title-section > h1 {
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.inner-title-section > p {
+  font-weight: 400;
+  font-size: 22px;
+  text-align: start;
+}
+
+.inner-title-section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  line-height: normal;
+  gap: 14px;
+  color: #333333;
+}
+
+.inner-title-section-2 > p {
+  font-weight: 400;
+  font-size: 17px;
+  text-align: start;
+  line-height: 28px;
+}
+
+.foundation-child-2 {
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+}
+
+.invest-in-chnagemaker-button {
+  height: 68px;
+  background-color: #0d7684;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.invest-in-chnagemaker-button > p {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.donate-now-btn {
+  height: 50px;
+  background-color: #1fb8cc;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  padding: 10px 10px;
+  color: white;
+}
+
+.donate-now-btn > a {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.arrow-icon-up {
+  width: 35px;
+  height: 35px;
+  background-color: #0c6f7c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.girid-cards-6-conatiner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 0rem;
+}
+
+.cards-box-foundation {
+  border: 1px solid #0fbbd4;
+  background: #def7fa;
+  padding: 1rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #084851;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.title-foundatin-2-child {
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+}
+
+.login-btn-style {
+  padding: 11px 1.6rem;
+  background-color: #ffebdc;
+  font-weight: 500;
+  font-size: 16px;
+  color: #222222;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.get-started-btn {
+  padding: 11px 1.6rem;
+  background-color: #d95f02;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.pricing-section-container {
+  padding-top: 4rem;
+}
+
+.our-education-approach-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 28% 1fr;
+  gap: 2rem;
+  padding: 1rem 5rem;
+}
+
+.container-approach-education-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.approach-education-container-2 {
+  background-color: #edf8fa;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.data-education-approach-label {
+  background-color: white;
+  box-shadow: 0px 0px 4px 0px #00000040;
+  border-radius: 6px;
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+}
+
+.title-data-approach-head {
+  font-weight: 500;
+  font-size: 18px;
+  color: black;
+}
+
+.title-data-approach-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: #333333;
+  text-align: start;
+}
+
+.education-title-label {
+  font-weight: 500;
+  font-size: 26px;
+  color: black;
+  text-align: start;
+}
+
+.our-global-impact-container-1 {
+  width: 100%;
+  /* height: 100vh; */
+  padding: 1rem 5rem;
+}
+
+.our-global-impact-container-child {
+  background-color: #edf8fa;
+  width: 100%;
+  /* height: 100%; */
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column; */
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.global-imapct-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* gap: 1rem; */
+}
+
+.larne-more-btn-global {
+  padding: 0.7rem 1rem;
+  background-color: white;
+  border: 1px solid #0c6f7c;
+  border-radius: 12px;
+  color: #0c6f7c;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.changemaker-data-container-outer {
+  padding: 1rem 5rem;
+}
+
+.text-align-center {
+  text-align: center;
+  width: 60%;
+}
+
+.image-changemaker-global > img {
+  width: 100%;
+  height: 100%;
+}
+
+.changemaker-our-global-container {
+  background-color: #fff5e8;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.changemaker-button-color-style {
+  padding: 0.7rem 1rem;
+  background-color: white;
+  border: 1px solid #be7004;
+  border-radius: 12px;
+  color: #be7004;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.nav-arrow {
     display: inline-block;
-    box-shadow: 0 4px 12px rgba(0, 172, 193, 0.3);
-    transition: 0.3s;
+    transition: transform 0.3s ease;
+    transform: rotate(180deg); 
+    font-size: 18px !important;
 }
 
-.f-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 15px rgba(0, 172, 193, 0.4); }
-
-.f-stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto 80px;
+.active-arrow .nav-arrow {
+    transform: rotate(0deg); 
 }
 
-.f-stat-card {
-    background: #fff;
-    padding: 30px 20px;
-    border-radius: 16px;
-    text-align: center;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+.impact-slider-foundation{
+  /* border: 1px solid black; */
+  border-radius: 6px;
+  overflow: hidden;
 }
 
-.f-stat-num {
-    font-size: 2.2rem;
-    font-weight: 800;
-    color: #00acc1;
+.container-center-style-class{
+  display: flex;
+  align-items: center;
+ justify-content: center;
+
 }
 
-.f-stat-label {
-    color: #94a3b8;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    font-weight: 600;
-}
 
-.f-sec-title {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2rem;
-}
+  .impact-image-box {
+    position: relative; 
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+  }
 
-.f-pillar-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
+  .impact-slider {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0; 
+    transition: opacity 0.8s ease-in-out; 
+  }
 
-.f-pillar-card {
-    background: #fff;
-    padding: 40px;
-    border-radius: 20px;
-    border: 1px solid #f1f5f9;
-    transition: 0.3s;
-}
 
-.f-pillar-card:hover { border-color: #00acc1; }
+  .impact-slider.active-slider {
+    opacity: 1;
+    z-index: 1;
+  }
 
-.active-pillar { border: 2px solid #00acc1; }
+  .imapct-text-meddle {
+    position: absolute;
+    z-index: 10; 
+  }
 
-.f-icon { font-size: 2.5rem; display: block; margin-bottom: 15px; }
+
+
+/* new  end css tab   */
 
 @media (max-width: 768px) {
-    .f-title { font-size: 2.2rem; }
+  .f-title {
+    font-size: 2.2rem;
+  }
 }
 
- /* foundation css end  */
+/* foundation css end  */
 
 @media screen and (min-width: 2560px) and (max-width: 3500px) {
   .logo-icon-reallives > img {
@@ -6312,6 +6740,9 @@ img {
 }
 
 @media (max-width: 1440px) {
+
+  
+
   .browse-peer-reviewed {
     padding: 2rem 2rem;
   }
@@ -6537,6 +6968,45 @@ img {
 }
 
 @media (max-width: 1368px) {
+
+  .inner-title-section > h1 {
+        font-size: 33px;
+    }
+
+    .our-education-approach-container {
+        padding: 1rem 3rem;
+        gap: 1rem;
+    }
+
+    .our-global-impact-container-1 {
+        padding: 1rem 3rem;
+    }
+
+    .changemaker-data-container-outer {
+        padding: 1rem 3em;
+    }
+
+    .foundation-first-container{
+      padding: 3rem 3rem;
+    }
+
+  .foundation-tab {
+        padding: 5rem 3rem;
+        padding-bottom: 2rem;
+    }
+
+  .child-container-inner-tab {
+    left: 13%;
+  }
+
+  .child-container-inner-tab-2 {
+    left: 18%;
+  }
+
+  .child-container-inner-tab-3 {
+    left: 24%;
+  }
+
   .research-title-first {
     font-size: 35px;
     line-height: 50px;
@@ -6824,6 +7294,45 @@ img {
 }
 
 @media (max-width: 1280px) {
+
+  .inner-title-section > h1 {
+        font-size: 33px;
+    }
+
+    .our-education-approach-container {
+        padding: 1rem 2rem;
+        gap: 1rem;
+    }
+
+    .our-global-impact-container-1 {
+        padding: 1rem 2rem;
+    }
+
+    .changemaker-data-container-outer {
+        padding: 1rem 2rem;
+    }
+
+    .foundation-first-container{
+      padding: 3rem 2rem;
+    }
+
+  .foundation-tab {
+        padding: 5rem 2rem;
+        padding-bottom: 2rem;
+    }
+
+  .child-container-inner-tab {
+    left: 0rem;
+  }
+
+  .child-container-inner-tab-2 {
+    left: 0rem;
+  }
+
+  .child-container-inner-tab-3 {
+    left: 0rem;
+  }
+
   .research-title-first {
     font-size: 33px;
     line-height: 48px;
@@ -7190,6 +7699,86 @@ img {
 }
 
 @media (max-width: 1180px) {
+
+  
+   .education-title-label{
+    font-size: 19px;
+  }
+
+  .title-data-approach-head {
+    font-size: 16px;
+  }
+   
+  .our-global-impact-container-1{
+    padding: 1rem 1rem;
+  }
+
+  .changemaker-data-container-outer{
+    padding: 1rem 1rem;
+  }
+
+
+  .our-education-approach-container {
+    padding: 1rem 1rem;
+    gap: 1rem;
+  }
+
+  
+  .inner-title-section > h1 {
+    font-size: 33px;
+  }
+
+  .inner-title-section > p {
+    font-size: 20px;
+  }
+
+  .inner-title-section-2 > p {
+    font-size: 16px;
+  }
+
+  .foundation-tab {
+    padding: 5rem 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .foundation-first-container {
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .title-foundatin-2-child {
+    font-size: 16px;
+  }
+  .invest-in-chnagemaker-button > p {
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .donate-now-btn {
+    font-size: 16px;
+  }
+
+  .arrow-icon-up {
+    width: 30px;
+    height: 30px;
+  }
+
+  .arrow-icon-up > span {
+    font-size: 15px !important;
+  }
+
+  .child-container-inner-tab {
+    left: 0rem;
+  }
+
+  .child-container-inner-tab-2 {
+    left: 0rem;
+  }
+
+  .child-container-inner-tab-3 {
+    left: 0rem;
+  }
+
   .research2-back-btn {
     top: 5.5%;
     left: 2%;
@@ -7660,6 +8249,90 @@ img {
 }
 
 @media (max-width: 1104px) {
+
+  .nav-arrow{
+    display: none;
+   }
+
+
+   .education-title-label{
+    font-size: 19px;
+  }
+
+  .title-data-approach-head {
+    font-size: 16px;
+  }
+   
+  .our-global-impact-container-1{
+    padding: 1rem 1rem;
+  }
+
+  .changemaker-data-container-outer{
+    padding: 1rem 1rem;
+  }
+
+
+  .our-education-approach-container {
+    padding: 1rem 1rem;
+    gap: 1rem;
+  }
+
+  
+  .inner-title-section > h1 {
+    font-size: 33px;
+  }
+
+  .inner-title-section > p {
+    font-size: 20px;
+  }
+
+  .inner-title-section-2 > p {
+    font-size: 16px;
+  }
+
+  .foundation-tab {
+    padding: 5rem 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .foundation-first-container {
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .title-foundatin-2-child {
+    font-size: 16px;
+  }
+  .invest-in-chnagemaker-button > p {
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .donate-now-btn {
+    font-size: 16px;
+  }
+
+  .arrow-icon-up {
+    width: 30px;
+    height: 30px;
+  }
+
+  .arrow-icon-up > span {
+    font-size: 15px !important;
+  }
+
+  .child-container-inner-tab {
+    left: 0rem;
+  }
+
+  .child-container-inner-tab-2 {
+    left: 0rem;
+  }
+
+  .child-container-inner-tab-3 {
+    left: 0rem;
+  }
+
   .research2-back-btn {
     top: 5.5%;
     left: 2%;
@@ -8136,6 +8809,90 @@ img {
 }
 
 @media (max-width: 1024px) {
+
+  .nav-arrow{
+    display: none;
+   }
+
+
+   .education-title-label{
+    font-size: 18px;
+  }
+
+  .title-data-approach-head {
+    font-size: 15px;
+  }
+   
+  .our-global-impact-container-1{
+    padding: 1rem 1rem;
+  }
+
+  .changemaker-data-container-outer{
+    padding: 1rem 1rem;
+  }
+
+
+  .our-education-approach-container {
+    padding: 1rem 1rem;
+    gap: 1rem;
+  }
+
+  
+  .inner-title-section > h1 {
+    font-size: 32px;
+  }
+
+  .inner-title-section > p {
+    font-size: 19px;
+  }
+
+  .inner-title-section-2 > p {
+    font-size: 15px;
+  }
+
+  .foundation-tab {
+    padding: 5rem 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .foundation-first-container {
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .title-foundatin-2-child {
+    font-size: 15px;
+  }
+  .invest-in-chnagemaker-button > p {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .donate-now-btn {
+    font-size: 15px;
+  }
+
+  .arrow-icon-up {
+    width: 28px;
+    height: 28px;
+  }
+
+  .arrow-icon-up > span {
+    font-size: 14px !important;
+  }
+
+  .child-container-inner-tab {
+    left: 0rem;
+  }
+
+  .child-container-inner-tab-2 {
+    left: 0rem;
+  }
+
+  .child-container-inner-tab-3 {
+    left: 0rem;
+  }
+
   .research2-back-btn {
     top: 5%;
     left: 2%;
@@ -8620,6 +9377,90 @@ img {
 }
 
 @media (max-width: 991px) {
+
+  .nav-arrow{
+    display: none;
+   }
+
+
+  .education-title-label{
+    font-size: 18px;
+  }
+
+  .title-data-approach-head {
+    font-size: 15px;
+  }
+   
+  .our-global-impact-container-1{
+    padding: 1rem 1rem;
+  }
+
+  .changemaker-data-container-outer{
+    padding: 1rem 1rem;
+  }
+
+
+  .our-education-approach-container {
+    padding: 1rem 1rem;
+    gap: 1rem;
+  }
+
+  
+  .inner-title-section > h1 {
+    font-size: 32px;
+  }
+
+  .inner-title-section > p {
+    font-size: 19px;
+  }
+
+  .inner-title-section-2 > p {
+    font-size: 15px;
+  }
+
+  .foundation-tab {
+    padding: 5rem 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .foundation-first-container {
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .title-foundatin-2-child {
+    font-size: 15px;
+  }
+  .invest-in-chnagemaker-button > p {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .donate-now-btn {
+    font-size: 15px;
+  }
+
+  .arrow-icon-up {
+    width: 28px;
+    height: 28px;
+  }
+
+  .arrow-icon-up > span {
+    font-size: 14px !important;
+  }
+
+  .child-container-inner-tab {
+    left: 0rem;
+  }
+
+  .child-container-inner-tab-2 {
+    left: 0rem;
+  }
+
+  .child-container-inner-tab-3 {
+    left: 0rem;
+  }
+
   .research2-back-btn {
     top: 5%;
     left: 2%;
@@ -9174,6 +10015,131 @@ img {
 }
 
 @media (max-width: 800px) {
+
+  .nav-arrow{
+    display: none;
+   }
+
+
+  .invest-in-chnagemaker-button {
+    width: 65%;
+  }
+
+  .inner-title-section {
+    align-items: center;
+  }
+
+  .container-approach-education-1 {
+    align-items: center;
+  }
+  .title-data-approach-description {
+    text-align: center;
+  }
+
+  .foundation-child-1 {
+    gap: 1rem;
+  }
+
+  .inner-title-section > p {
+    font-size: 18px;
+  }
+
+  .inner-title-section-2 > p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .cards-box-foundation {
+    font-size: 15px;
+  }
+
+  .arrow-icon-up > span {
+    font-size: 14px !important;
+  }
+
+  .arrow-icon-up {
+    width: 28px;
+    height: 28px;
+  }
+
+  .donate-now-btn {
+    font-size: 15px;
+  }
+
+  .invest-in-chnagemaker-button > p {
+    font-size: 15px;
+  }
+
+  .inner-title-section > h1 {
+    font-size: 29px;
+  }
+
+  .changemaker-button-color-style {
+    font-size: 15px;
+  }
+
+  .larne-more-btn-global {
+    font-size: 15px;
+  }
+
+  .education-title-label {
+    font-size: 23px;
+  }
+
+  .text-align-center {
+    text-align: start;
+    width: 100%;
+  }
+
+  .changemaker-data-container-outer {
+    padding: 1rem 1rem;
+  }
+
+  .our-global-impact-container-1 {
+    padding: 1rem 1rem;
+  }
+
+  .foundation-first-container {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .our-education-approach-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+    gap: 1rem;
+  }
+
+  .approach-education-container-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .girid-cards-6-conatiner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .foundation-tab {
+    padding: 3rem 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .foundation-child-2 {
+    padding: 0rem;
+  }
+
+  .child-container-inner-tab {
+    left: 0rem;
+  }
+
+  .child-container-inner-tab-2 {
+    left: 0rem;
+  }
+
+  .child-container-inner-tab-3 {
+    left: 0rem;
+  }
+
   .research2-back-btn {
     top: 4%;
   }
@@ -9626,6 +10592,131 @@ img {
 }
 
 @media (max-width: 770px) {
+
+  .nav-arrow{
+    display: none;
+   }
+
+
+  .invest-in-chnagemaker-button {
+    width: 65%;
+  }
+
+  .inner-title-section {
+    align-items: center;
+  }
+
+  .container-approach-education-1 {
+    align-items: center;
+  }
+  .title-data-approach-description {
+    text-align: center;
+  }
+
+  .foundation-child-1 {
+    gap: 1rem;
+  }
+
+  .inner-title-section > p {
+    font-size: 18px;
+  }
+
+  .inner-title-section-2 > p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .cards-box-foundation {
+    font-size: 15px;
+  }
+
+  .arrow-icon-up > span {
+    font-size: 14px !important;
+  }
+
+  .arrow-icon-up {
+    width: 28px;
+    height: 28px;
+  }
+
+  .donate-now-btn {
+    font-size: 15px;
+  }
+
+  .invest-in-chnagemaker-button > p {
+    font-size: 15px;
+  }
+
+  .inner-title-section > h1 {
+    font-size: 29px;
+  }
+
+  .changemaker-button-color-style {
+    font-size: 15px;
+  }
+
+  .larne-more-btn-global {
+    font-size: 15px;
+  }
+
+  .education-title-label {
+    font-size: 23px;
+  }
+
+  .text-align-center {
+    text-align: start;
+    width: 100%;
+  }
+
+  .changemaker-data-container-outer {
+    padding: 1rem 1rem;
+  }
+
+  .our-global-impact-container-1 {
+    padding: 1rem 1rem;
+  }
+
+  .foundation-first-container {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .our-education-approach-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+    gap: 1rem;
+  }
+
+  .approach-education-container-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .girid-cards-6-conatiner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .foundation-tab {
+    padding: 3rem 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .foundation-child-2 {
+    padding: 0rem;
+  }
+
+  .child-container-inner-tab {
+    left: 0rem;
+  }
+
+  .child-container-inner-tab-2 {
+    left: 0rem;
+  }
+
+  .child-container-inner-tab-3 {
+    left: 0rem;
+  }
+
   .research2-back-btn {
     top: 3.6%;
   }
@@ -9907,6 +10998,130 @@ img {
 }
 
 @media (max-width: 700px) {
+
+  .nav-arrow{
+    display: none;
+   }
+
+
+     .invest-in-chnagemaker-button {
+        width: 100%;
+    }
+
+  .inner-title-section {
+    align-items: center;
+  }
+
+  .container-approach-education-1 {
+    align-items: center;
+  }
+  .title-data-approach-description {
+    text-align: center;
+  }
+
+  .foundation-child-1 {
+    gap: 1rem;
+  }
+
+  .inner-title-section > p {
+    font-size: 18px;
+  }
+
+  .inner-title-section-2 > p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .cards-box-foundation {
+    font-size: 15px;
+  }
+
+  .arrow-icon-up > span {
+    font-size: 14px !important;
+  }
+
+  .arrow-icon-up {
+    width: 28px;
+    height: 28px;
+  }
+
+  .donate-now-btn {
+    font-size: 15px;
+  }
+
+  .invest-in-chnagemaker-button > p {
+    font-size: 15px;
+  }
+
+  .inner-title-section > h1 {
+    font-size: 29px;
+  }
+
+  .changemaker-button-color-style {
+    font-size: 15px;
+  }
+
+  .larne-more-btn-global {
+    font-size: 15px;
+  }
+
+  .education-title-label {
+    font-size: 23px;
+  }
+
+  .text-align-center {
+    text-align: start;
+    width: 100%;
+  }
+
+  .changemaker-data-container-outer {
+    padding: 1rem 1rem;
+  }
+
+  .our-global-impact-container-1 {
+    padding: 1rem 1rem;
+  }
+
+  .foundation-first-container {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .our-education-approach-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+    gap: 1rem;
+  }
+
+  .approach-education-container-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .girid-cards-6-conatiner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .foundation-tab {
+    padding: 3rem 0rem;
+    padding-bottom: 0rem;
+  }
+  .foundation-child-2 {
+    padding: 0rem;
+  }
+
+  .child-container-inner-tab {
+    left: 0rem;
+  }
+
+  .child-container-inner-tab-2 {
+    left: 0rem;
+  }
+
+  .child-container-inner-tab-3 {
+    left: 0rem;
+  }
+
   .research2-back-btn {
     top: 3.6%;
   }
@@ -10429,6 +11644,155 @@ img {
 }
 
 @media (max-width: 650px) {
+
+  .nav-arrow{
+    display: none;
+   }
+
+
+     .invest-in-chnagemaker-button {
+        width: 100%;
+    }
+
+  .foundation-child-1 {
+    gap: 1rem;
+  }
+
+  .inner-title-section > p {
+    font-size: 18px;
+  }
+
+  .inner-title-section-2 > p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .cards-box-foundation {
+    font-size: 15px;
+  }
+
+  .arrow-icon-up > span {
+    font-size: 14px !important;
+  }
+
+  .arrow-icon-up {
+    width: 28px;
+    height: 28px;
+  }
+
+  .donate-now-btn {
+    font-size: 15px;
+  }
+
+  .invest-in-chnagemaker-button > p {
+    font-size: 15px;
+  }
+
+  .inner-title-section > h1 {
+    font-size: 29px;
+  }
+
+  .changemaker-button-color-style {
+    font-size: 15px;
+  }
+
+  .larne-more-btn-global {
+    font-size: 15px;
+  }
+
+  .education-title-label {
+    font-size: 23px;
+  }
+
+  .text-align-center {
+    text-align: start;
+    width: 100%;
+  }
+
+  .changemaker-data-container-outer {
+    padding: 1rem 1rem;
+  }
+
+  .our-global-impact-container-1 {
+    padding: 1rem 1rem;
+  }
+
+  .foundation-first-container {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .our-education-approach-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+    gap: 1rem;
+  }
+
+  .approach-education-container-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .girid-cards-6-conatiner {
+    grid-template-columns: 1fr;
+  }
+
+  .foundation-tab {
+    padding: 3rem 0rem;
+    padding-bottom: 0rem;
+  }
+  .foundation-child-2 {
+    padding: 0rem;
+  }
+
+  .child-container-inner-tab {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #innerTab {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .child-container-inner-tab-2 {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #resourceInnerTab2 {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .child-container-inner-tab-3 {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #companyTab {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .research2-back-btn {
     top: 3.4%;
   }
@@ -10983,6 +12347,156 @@ img {
 }
 
 @media (max-width: 570px) {
+
+  .nav-arrow{
+    display: none;
+   }
+
+
+     .invest-in-chnagemaker-button {
+        width: 100%;
+    }
+
+  .foundation-child-1 {
+    gap: 1rem;
+  }
+
+  .inner-title-section > p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .inner-title-section-2 > p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .cards-box-foundation {
+    font-size: 15px;
+  }
+
+  .arrow-icon-up > span {
+    font-size: 14px !important;
+  }
+
+  .arrow-icon-up {
+    width: 28px;
+    height: 28px;
+  }
+
+  .donate-now-btn {
+    font-size: 15px;
+  }
+
+  .invest-in-chnagemaker-button > p {
+    font-size: 15px;
+  }
+
+  .inner-title-section > h1 {
+    font-size: 29px;
+  }
+
+  .changemaker-button-color-style {
+    font-size: 15px;
+  }
+
+  .larne-more-btn-global {
+    font-size: 15px;
+  }
+
+  .education-title-label {
+    font-size: 23px;
+  }
+
+  .text-align-center {
+    text-align: start;
+    width: 100%;
+  }
+
+  .changemaker-data-container-outer {
+    padding: 1rem 1rem;
+  }
+
+  .our-global-impact-container-1 {
+    padding: 1rem 1rem;
+  }
+
+  .foundation-first-container {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .our-education-approach-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+    gap: 1rem;
+  }
+
+  .approach-education-container-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .girid-cards-6-conatiner {
+    grid-template-columns: 1fr;
+  }
+
+  .foundation-tab {
+    padding: 3rem 0rem;
+    padding-bottom: 0rem;
+  }
+  .foundation-child-2 {
+    padding: 0rem;
+  }
+
+  .child-container-inner-tab {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #innerTab {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .child-container-inner-tab-2 {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #resourceInnerTab2 {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .child-container-inner-tab-3 {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #companyTab {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .research2-back-btn {
     top: 5%;
   }
@@ -11546,6 +13060,155 @@ img {
 }
 
 @media (max-width: 530px) {
+
+  .nav-arrow{
+    display: none;
+   }
+
+
+     .invest-in-chnagemaker-button {
+        width: 100%;
+    }
+
+  .foundation-child-1 {
+    gap: 1rem;
+  }
+
+  .inner-title-section > p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .inner-title-section-2 > p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .cards-box-foundation {
+    font-size: 15px;
+  }
+
+  .arrow-icon-up > span {
+    font-size: 14px !important;
+  }
+
+  .arrow-icon-up {
+    width: 28px;
+    height: 28px;
+  }
+
+  .donate-now-btn {
+    font-size: 15px;
+  }
+
+  .invest-in-chnagemaker-button > p {
+    font-size: 15px;
+  }
+
+  .inner-title-section > h1 {
+    font-size: 29px;
+  }
+
+  .changemaker-button-color-style {
+    font-size: 15px;
+  }
+
+  .larne-more-btn-global {
+    font-size: 15px;
+  }
+
+  .education-title-label {
+    font-size: 23px;
+  }
+
+  .text-align-center {
+    text-align: start;
+    width: 100%;
+  }
+
+  .changemaker-data-container-outer {
+    padding: 1rem 1rem;
+  }
+
+  .our-global-impact-container-1 {
+    padding: 1rem 1rem;
+  }
+
+  .foundation-first-container {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .our-education-approach-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .approach-education-container-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .girid-cards-6-conatiner {
+    grid-template-columns: 1fr;
+  }
+
+  .foundation-tab {
+    padding: 3rem 0rem;
+    padding-bottom: 0rem;
+  }
+  .foundation-child-2 {
+    padding: 0rem;
+  }
+
+  .child-container-inner-tab {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #innerTab {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .child-container-inner-tab-2 {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #resourceInnerTab2 {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .child-container-inner-tab-3 {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #companyTab {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .research2-back-btn {
     top: 5%;
   }
@@ -12141,6 +13804,155 @@ img {
 }
 
 @media (max-width: 480px) {
+
+  .nav-arrow{
+    display: none;
+   }
+
+
+     .invest-in-chnagemaker-button {
+        width: 100%;
+    }
+
+  .foundation-child-1 {
+    gap: 1rem;
+  }
+
+  .inner-title-section > p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .inner-title-section-2 > p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .cards-box-foundation {
+    font-size: 15px;
+  }
+
+  .arrow-icon-up > span {
+    font-size: 14px !important;
+  }
+
+  .arrow-icon-up {
+    width: 28px;
+    height: 28px;
+  }
+
+  .donate-now-btn {
+    font-size: 15px;
+  }
+
+  .invest-in-chnagemaker-button > p {
+    font-size: 15px;
+  }
+
+  .inner-title-section > h1 {
+    font-size: 29px;
+  }
+
+  .changemaker-button-color-style {
+    font-size: 15px;
+  }
+
+  .larne-more-btn-global {
+    font-size: 15px;
+  }
+
+  .education-title-label {
+    font-size: 23px;
+  }
+
+  .text-align-center {
+    text-align: start;
+    width: 100%;
+  }
+
+  .changemaker-data-container-outer {
+    padding: 1rem 1rem;
+  }
+
+  .our-global-impact-container-1 {
+    padding: 1rem 1rem;
+  }
+
+  .foundation-first-container {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .our-education-approach-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .approach-education-container-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .girid-cards-6-conatiner {
+    grid-template-columns: 1fr;
+  }
+
+  .foundation-tab {
+    padding: 3rem 0rem;
+    padding-bottom: 0rem;
+  }
+  .foundation-child-2 {
+    padding: 0rem;
+  }
+
+  .child-container-inner-tab {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #innerTab {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .child-container-inner-tab-2 {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #resourceInnerTab2 {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .child-container-inner-tab-3 {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #companyTab {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .web-show-style {
     display: none;
   }
@@ -12740,6 +14552,155 @@ img {
 }
 
 @media (max-width: 450px) {
+
+  .nav-arrow{
+    display: none;
+   }
+
+
+     .invest-in-chnagemaker-button {
+        width: 100%;
+    }
+
+  .foundation-child-1 {
+    gap: 1rem;
+  }
+
+  .inner-title-section > p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .inner-title-section-2 > p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .cards-box-foundation {
+    font-size: 14px;
+  }
+
+  .arrow-icon-up > span {
+    font-size: 13px !important;
+  }
+
+  .arrow-icon-up {
+    width: 25px;
+    height: 25px;
+  }
+
+  .donate-now-btn {
+    font-size: 14px;
+  }
+
+  .invest-in-chnagemaker-button > p {
+    font-size: 12px;
+  }
+
+  .inner-title-section > h1 {
+    font-size: 28px;
+  }
+
+  .changemaker-button-color-style {
+    font-size: 14px;
+  }
+
+  .larne-more-btn-global {
+    font-size: 14px;
+  }
+
+  .education-title-label {
+    font-size: 22px;
+  }
+
+  .text-align-center {
+    text-align: start;
+    width: 100%;
+  }
+
+  .changemaker-data-container-outer {
+    padding: 1rem 1rem;
+  }
+
+  .our-global-impact-container-1 {
+    padding: 1rem 1rem;
+  }
+
+  .foundation-first-container {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .our-education-approach-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .approach-education-container-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .girid-cards-6-conatiner {
+    grid-template-columns: 1fr;
+  }
+
+  .foundation-tab {
+    padding: 3rem 0rem;
+    padding-bottom: 0rem;
+  }
+  .foundation-child-2 {
+    padding: 0rem;
+  }
+
+  .child-container-inner-tab {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #innerTab {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .child-container-inner-tab-2 {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #resourceInnerTab2 {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .child-container-inner-tab-3 {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #companyTab {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .web-show-style {
     display: none;
   }
@@ -13344,6 +15305,155 @@ img {
 }
 
 @media (max-width: 440px) {
+
+  .nav-arrow{
+    display: none;
+   }
+
+
+     .invest-in-chnagemaker-button {
+        width: 100%;
+    }
+
+  .foundation-child-1 {
+    gap: 1rem;
+  }
+
+  .inner-title-section > p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .inner-title-section-2 > p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .cards-box-foundation {
+    font-size: 14px;
+  }
+
+  .arrow-icon-up > span {
+    font-size: 13px !important;
+  }
+
+  .arrow-icon-up {
+    width: 25px;
+    height: 25px;
+  }
+
+  .donate-now-btn {
+    font-size: 14px;
+  }
+
+  .invest-in-chnagemaker-button > p {
+    font-size: 12px;
+  }
+
+  .inner-title-section > h1 {
+    font-size: 28px;
+  }
+
+  .changemaker-button-color-style {
+    font-size: 14px;
+  }
+
+  .larne-more-btn-global {
+    font-size: 14px;
+  }
+
+  .education-title-label {
+    font-size: 22px;
+  }
+
+  .text-align-center {
+    text-align: start;
+    width: 100%;
+  }
+
+  .changemaker-data-container-outer {
+    padding: 1rem 1rem;
+  }
+
+  .our-global-impact-container-1 {
+    padding: 1rem 1rem;
+  }
+
+  .foundation-first-container {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .our-education-approach-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .approach-education-container-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .girid-cards-6-conatiner {
+    grid-template-columns: 1fr;
+  }
+
+  .foundation-tab {
+    padding: 3rem 0rem;
+    padding-bottom: 0rem;
+  }
+  .foundation-child-2 {
+    padding: 0rem;
+  }
+
+  .child-container-inner-tab {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #innerTab {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .child-container-inner-tab-2 {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #resourceInnerTab2 {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .child-container-inner-tab-3 {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #companyTab {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .web-show-style {
     display: none;
   }
@@ -13748,6 +15858,154 @@ img {
 }
 
 @media (max-width: 400px) {
+
+  .nav-arrow{
+    display: none;
+   }
+
+
+     .invest-in-chnagemaker-button {
+        width: 100%;
+    }
+
+  .foundation-child-1 {
+    gap: 1rem;
+  }
+
+  .inner-title-section > p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .inner-title-section-2 > p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .cards-box-foundation {
+    font-size: 14px;
+  }
+
+  .arrow-icon-up > span {
+    font-size: 13px !important;
+  }
+
+  .arrow-icon-up {
+    width: 25px;
+    height: 25px;
+  }
+
+  .donate-now-btn {
+    font-size: 14px;
+  }
+
+  .invest-in-chnagemaker-button > p {
+    font-size: 12px;
+  }
+
+  .inner-title-section > h1 {
+    font-size: 28px;
+  }
+
+  .changemaker-button-color-style {
+    font-size: 14px;
+  }
+
+  .larne-more-btn-global {
+    font-size: 14px;
+  }
+
+  .education-title-label {
+    font-size: 22px;
+  }
+
+  .text-align-center {
+    text-align: start;
+    width: 100%;
+  }
+
+  .changemaker-data-container-outer {
+    padding: 1rem 1rem;
+  }
+
+  .our-global-impact-container-1 {
+    padding: 1rem 1rem;
+  }
+
+  .foundation-first-container {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .our-education-approach-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .approach-education-container-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .girid-cards-6-conatiner {
+    grid-template-columns: 1fr;
+  }
+
+  .foundation-tab {
+    padding: 3rem 0rem;
+    padding-bottom: 0rem;
+  }
+  .foundation-child-2 {
+    padding: 0rem;
+  }
+
+  .child-container-inner-tab {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #innerTab {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+  .child-container-inner-tab-2 {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #resourceInnerTab2 {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .child-container-inner-tab-3 {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #companyTab {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .web-show-style {
     display: none;
   }
@@ -14356,6 +16614,154 @@ img {
 }
 
 @media (max-width: 390px) {
+
+  .nav-arrow{
+    display: none;
+   }
+
+
+     .invest-in-chnagemaker-button {
+        width: 100%;
+    }
+
+  .foundation-child-1 {
+    gap: 1rem;
+  }
+
+  .inner-title-section > p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .inner-title-section-2 > p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .cards-box-foundation {
+    font-size: 14px;
+  }
+
+  .arrow-icon-up > span {
+    font-size: 13px !important;
+  }
+
+  .arrow-icon-up {
+    width: 25px;
+    height: 25px;
+  }
+
+  .donate-now-btn {
+    font-size: 14px;
+  }
+
+  .invest-in-chnagemaker-button > p {
+    font-size: 12px;
+  }
+
+  .inner-title-section > h1 {
+    font-size: 28px;
+  }
+
+  .changemaker-button-color-style {
+    font-size: 14px;
+  }
+
+  .larne-more-btn-global {
+    font-size: 14px;
+  }
+
+  .education-title-label {
+    font-size: 22px;
+  }
+
+  .text-align-center {
+    text-align: start;
+    width: 100%;
+  }
+
+  .changemaker-data-container-outer {
+    padding: 1rem 1rem;
+  }
+
+  .our-global-impact-container-1 {
+    padding: 1rem 1rem;
+  }
+
+  .foundation-first-container {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .our-education-approach-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .approach-education-container-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .girid-cards-6-conatiner {
+    grid-template-columns: 1fr;
+  }
+
+  .foundation-tab {
+    padding: 3rem 0rem;
+    padding-bottom: 0rem;
+  }
+  .foundation-child-2 {
+    padding: 0rem;
+  }
+
+  .child-container-inner-tab {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #innerTab {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+  .child-container-inner-tab-2 {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #resourceInnerTab2 {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .child-container-inner-tab-3 {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #companyTab {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .web-show-style {
     display: none;
   }
@@ -14952,6 +17358,153 @@ img {
 }
 
 @media (max-width: 375px) {
+
+   .nav-arrow{
+    display: none;
+   }
+
+      .invest-in-chnagemaker-button {
+        width: 100%;
+    }
+
+  .foundation-child-1 {
+    gap: 1rem;
+  }
+
+  .inner-title-section > p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .inner-title-section-2 > p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .cards-box-foundation {
+    font-size: 14px;
+  }
+
+  .arrow-icon-up > span {
+    font-size: 13px !important;
+  }
+
+  .arrow-icon-up {
+    width: 25px;
+    height: 25px;
+  }
+
+  .donate-now-btn {
+    font-size: 14px;
+  }
+
+  .invest-in-chnagemaker-button > p {
+    font-size: 12px;
+  }
+
+  .inner-title-section > h1 {
+    font-size: 28px;
+  }
+
+  .changemaker-button-color-style {
+    font-size: 14px;
+  }
+
+  .larne-more-btn-global {
+    font-size: 14px;
+  }
+
+  .education-title-label {
+    font-size: 22px;
+  }
+
+  .text-align-center {
+    text-align: start;
+    width: 100%;
+  }
+
+  .changemaker-data-container-outer {
+    padding: 1rem 1rem;
+  }
+
+  .our-global-impact-container-1 {
+    padding: 1rem 1rem;
+  }
+
+  .foundation-first-container {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .our-education-approach-container {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+  }
+
+  .approach-education-container-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .girid-cards-6-conatiner {
+    grid-template-columns: 1fr;
+  }
+
+  .foundation-tab {
+    padding: 3rem 0rem;
+    padding-bottom: 0rem;
+  }
+  .foundation-child-2 {
+    padding: 0rem;
+  }
+
+  .child-container-inner-tab {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+  #innerTab {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .child-container-inner-tab-2 {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #resourceInnerTab2 {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .child-container-inner-tab-3 {
+    grid-template-columns: 1fr;
+    padding-right: 0rem;
+    padding: 1rem;
+    left: 0rem;
+    width: 100%;
+  }
+
+  #companyTab {
+    justify-content: start;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+
   /* research css  */
 
   .web-show-style {
