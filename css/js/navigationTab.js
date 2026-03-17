@@ -331,8 +331,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // footer javascript
 
-
-// navigation arrow js 
+// navigation arrow js
 
 document.addEventListener("DOMContentLoaded", () => {
   const allNavLinks = document.querySelectorAll(".nav-link");
@@ -364,8 +363,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// navigation arrow js 
-
+// navigation arrow js
 
 // foundation imapct slider js  school
 
@@ -380,53 +378,599 @@ allImpactContainers.forEach((container) => {
   if (sliderImages.length > 0) {
     function cycleImages() {
       sliderImages[currentSlide].classList.remove("active-slider");
-
       currentSlide = (currentSlide + 1) % sliderImages.length;
-
       sliderImages[currentSlide].classList.add("active-slider");
     }
-
     setInterval(cycleImages, 3000);
   }
 });
 
 // foundation imapct slider js  school
 
-
-// larne more btn school foundation click event  start 
-
+// larne more btn school foundation click event  start
 
 function handleImpactClick() {
-    // 1. Instant Tab Click
-    const mainTabBtn = document.getElementById('navChangeMaker'); 
-    if (mainTabBtn) {
-        mainTabBtn.click();
-    }
+  const mainTabBtn = document.getElementById("navChangeMaker");
+  if (mainTabBtn) {
+    mainTabBtn.click();
+  }
+  const otherTab = document.getElementById("innerTab");
+  if (otherTab) {
+    otherTab.style.display = "none";
+  }
 
-    // 2. Doosre tab ko turant hide karein
-    const otherTab = document.getElementById('innerTab');
-    if (otherTab) {
-        otherTab.style.display = 'none'; 
-    }
+  const targetContent = document.getElementById("impactTabInner");
+  if (targetContent) {
+    targetContent.style.display = "block";
 
-    // 3. Fast Scroll Logic
-    const targetContent = document.getElementById('impactTabInner');
-    if (targetContent) {
-        // Display ko pehle hi block kar dein taaki height calculate ho sake
-        targetContent.style.display = 'block'; 
-
-        // Delay ko 350ms se ghata kar 50ms-100ms kar dein (Halka sa gap animation ke liye zaroori hai)
-        setTimeout(() => {
-            targetContent.scrollIntoView({ 
-                behavior: 'smooth', 
-                block: 'start' 
-            });
-        }, 100); // Sirf 100ms ka delay, jo bilkul instant feel hoga
-    }
+    setTimeout(() => {
+      targetContent.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 100);
+  }
 }
-
 
 // larne more btn school foundation click event  end
 
+// fondation donate modal start js
 
-  
+
+// document.addEventListener("DOMContentLoaded", () => {
+
+//   const boxes = document.querySelectorAll(".select-ammmount-box");
+//   const donateBtn = document.querySelector(".btn-donate");
+//   const errorMsg = document.querySelector(".select-ammounnt-text");
+//   const customInput = document.querySelector(".input-box-container input");
+//   const containerDefault = document.querySelector(".select-donation-account-container");
+//   const containerCustom = document.querySelector(".select-donation-account-container-2");
+//   const backBtn = document.querySelector(".icon-back-btn");
+//   const paypalContainer = document.getElementById("paypal-button-container");
+
+//   const modal = document.getElementById("donation-success-modal");
+//   const modalText = document.getElementById("donation-user-text");
+//   const closeModalBtn = document.getElementById("close-donation-modal");
+
+
+//   // amount select
+//   boxes.forEach((box) => {
+
+//     box.addEventListener("click", function () {
+
+//       const text = this.innerText.trim();
+
+//       boxes.forEach((b) => b.classList.remove("active"));
+//       this.classList.add("active");
+
+//       if (errorMsg) errorMsg.style.display = "none";
+
+//       paypalContainer.style.display = "none";
+//       donateBtn.style.display = "block";
+
+//       if (text === "Custom") {
+//         containerDefault.style.display = "none";
+//         containerCustom.style.display = "grid";
+//       }
+
+//     });
+
+//   });
+
+
+//   // back button
+//   if (backBtn) {
+
+//     backBtn.onclick = function () {
+
+//       containerCustom.style.display = "none";
+//       containerDefault.style.display = "grid";
+
+//       boxes.forEach((b) => b.classList.remove("active"));
+
+//     };
+
+//   }
+
+
+//   // custom input format
+//   if (customInput) {
+
+//     customInput.value = "$ ";
+
+//     customInput.addEventListener("input", function () {
+
+//       if (!this.value.startsWith("$ ")) {
+//         this.value = "$ " + this.value.replace(/^\$?\s*/, "");
+//       }
+
+//       let val = this.value.substring(2).replace(/[^0-9.]/g, "");
+
+//       const parts = val.split(".");
+
+//       if (parts.length > 2) {
+//         val = parts[0] + "." + parts.slice(1).join("");
+//       }
+
+//       this.value = "$ " + val;
+
+//     });
+
+//   }
+
+
+//   // donate button click
+//   if (donateBtn) {
+
+//     donateBtn.onclick = function () {
+
+//       const activeBox = document.querySelector(".select-ammmount-box.active");
+
+//       let rawAmount = "";
+
+//       if (!activeBox) {
+
+//         errorMsg.style.display = "block";
+
+//         setTimeout(() => {
+//           errorMsg.style.display = "none";
+//         }, 3000);
+
+//         return;
+
+//       }
+
+//       if (activeBox.innerText.trim() === "Custom") {
+//         rawAmount = customInput.value.replace("$", "").trim();
+//       } else {
+//         rawAmount = activeBox.innerText.replace("$", "").trim();
+//       }
+
+//       const finalAmount = parseFloat(rawAmount);
+
+//       if (isNaN(finalAmount) || finalAmount <= 0) {
+
+//         alert("Please enter a valid donation amount.");
+//         return;
+
+//       }
+
+//       donateBtn.style.display = "none";
+//       paypalContainer.style.display = "block";
+//       paypalContainer.innerHTML = "";
+
+
+//       paypal.Buttons({
+
+//         createOrder: function (data, actions) {
+
+//           return actions.order.create({
+
+//             purchase_units: [{
+//               amount: {
+//                 currency_code: "USD",
+//                 value: finalAmount.toFixed(2)
+//               }
+//             }]
+
+//           });
+
+//         },
+
+
+//         onApprove: function (data, actions) {
+
+//           return actions.order.capture().then(function (details) {
+
+//             const name = details.payer.name.given_name;
+
+//             // show custom modal
+//             if (modal && modalText) {
+
+//               modalText.innerHTML =
+//                 "Thank you <b>" + name + "</b> for your donation!";
+
+//               modal.classList.add("active");
+
+//               setTimeout(() => {
+//                 modal.classList.remove("active");
+//               }, 8000);
+
+//             }
+
+
+//             // reset UI
+//             boxes.forEach(b => b.classList.remove("active"));
+
+//             if (customInput) {
+//               customInput.value = "$ ";
+//             }
+
+//             if (containerCustom) {
+//               containerCustom.style.display = "none";
+//             }
+
+//             if (containerDefault) {
+//               containerDefault.style.display = "grid";
+//             }
+
+//             paypalContainer.style.display = "none";
+//             donateBtn.style.display = "block";
+
+//           });
+
+//         },
+
+
+//         onCancel: function () {
+
+//           paypalContainer.style.display = "none";
+//           donateBtn.style.display = "block";
+
+//         },
+
+
+//         onError: function (err) {
+
+//           console.error(err);
+//           alert("Payment failed. Please try again.");
+
+//           paypalContainer.style.display = "none";
+//           donateBtn.style.display = "block";
+
+//         }
+
+//       }).render("#paypal-button-container");
+
+//     };
+
+//   }
+
+
+//   // close modal button
+//   if (closeModalBtn) {
+
+//     closeModalBtn.onclick = function () {
+
+//       modal.classList.remove("active");
+
+//     };
+
+//   }
+
+// });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const boxes = document.querySelectorAll(".select-ammmount-box");
+  const donateBtn = document.querySelector(".btn-donate");
+  const errorMsg = document.querySelector(".select-ammounnt-text");
+  const customInput = document.querySelector(".input-box-container input");
+  const containerDefault = document.querySelector(".select-donation-account-container");
+  const containerCustom = document.querySelector(".select-donation-account-container-2");
+  const backBtn = document.querySelector(".icon-back-btn");
+  const goBackBtn = document.querySelector(".go-back-btn-found");
+  const paypalContainer = document.getElementById("paypal-button-container");
+
+  const modal = document.getElementById("donation-success-modal");
+  const modalText = document.getElementById("donation-user-text");
+  const closeModalBtn = document.getElementById("close-donation-modal");
+
+  const investBtn = document.querySelector(".donate-now-btn");
+  const investModal = document.querySelector(".invest-modal-foundation");
+
+
+  if (investBtn) {
+    investBtn.addEventListener("click", function (e) {
+
+      e.preventDefault();
+
+      investModal.style.display = "grid";
+      document.body.classList.add("blur-bg");
+
+    });
+  }
+
+  boxes.forEach((box) => {
+
+    box.addEventListener("click", function () {
+
+      const text = this.innerText.trim();
+
+      if (this.classList.contains("active")) {
+
+        this.classList.remove("active");
+
+        if (text === "Custom") {
+          containerCustom.style.display = "none";
+          containerDefault.style.display = "grid";
+        }
+
+        return;
+      }
+
+      boxes.forEach((b) => b.classList.remove("active"));
+
+      this.classList.add("active");
+
+      if (errorMsg) errorMsg.style.display = "none";
+
+      paypalContainer.style.display = "none";
+      donateBtn.style.display = "block";
+
+      if (text === "Custom") {
+
+        containerDefault.style.display = "none";
+        containerCustom.style.display = "grid";
+
+        const customBoxes = containerCustom.querySelectorAll(".select-ammmount-box");
+
+        customBoxes.forEach(box => {
+
+          if (box.innerText.trim() === "Custom") {
+            box.classList.add("active");
+          }
+
+        });
+
+      }
+
+    });
+
+  });
+
+  if (backBtn) {
+
+    backBtn.onclick = function () {
+
+      containerCustom.style.display = "none";
+      containerDefault.style.display = "grid";
+
+      boxes.forEach((b) => b.classList.remove("active"));
+
+      investModal.style.display = "none";
+      document.body.classList.remove("blur-bg");
+
+    };
+
+  }
+
+  if (goBackBtn) {
+
+    goBackBtn.addEventListener("click", function () {
+
+      investModal.style.display = "none";
+      document.body.classList.remove("blur-bg");
+
+    });
+
+  }
+
+  if (customInput) {
+
+    customInput.value = "$ ";
+
+    customInput.addEventListener("input", function () {
+
+      if (!this.value.startsWith("$ ")) {
+        this.value = "$ " + this.value.replace(/^\$?\s*/, "");
+      }
+
+      let val = this.value.substring(2).replace(/[^0-9.]/g, "");
+
+      const parts = val.split(".");
+
+      if (parts.length > 2) {
+        val = parts[0] + "." + parts.slice(1).join("");
+      }
+
+      this.value = "$ " + val;
+
+    });
+
+  }
+
+
+  if (donateBtn) {
+
+    donateBtn.onclick = function () {
+
+      const activeBox = document.querySelector(".select-ammmount-box.active");
+
+      let rawAmount = "";
+
+      if (!activeBox) {
+
+        errorMsg.style.display = "block";
+
+        setTimeout(() => {
+          errorMsg.style.display = "none";
+        }, 3000);
+
+        return;
+
+      }
+
+      if (activeBox.innerText.trim() === "Custom") {
+        rawAmount = customInput.value.replace("$", "").trim();
+      } else {
+        rawAmount = activeBox.innerText.replace("$", "").trim();
+      }
+
+      const finalAmount = parseFloat(rawAmount);
+
+      if (isNaN(finalAmount) || finalAmount <= 0) {
+
+        alert("Please enter a valid donation amount.");
+        return;
+
+      }
+
+      donateBtn.style.display = "none";
+      paypalContainer.style.display = "block";
+      paypalContainer.innerHTML = "";
+
+
+      paypal.Buttons({
+
+        createOrder: function (data, actions) {
+
+          return actions.order.create({
+
+            purchase_units: [{
+              amount: {
+                currency_code: "USD",
+                value: finalAmount.toFixed(2)
+              }
+            }]
+
+          });
+
+        },
+
+
+        onApprove: function (data, actions) {
+
+          return actions.order.capture().then(function (details) {
+
+            const name = details.payer.name.given_name;
+
+            if (modal && modalText) {
+
+              modalText.innerHTML =
+                "Thank you <b>" + name + "</b> for your donation!";
+
+              modal.classList.add("active");
+
+              setTimeout(() => {
+                modal.classList.remove("active");
+              }, 8000);
+
+            }
+
+            boxes.forEach(b => b.classList.remove("active"));
+
+            if (customInput) {
+              customInput.value = "$ ";
+            }
+
+            if (containerCustom) {
+              containerCustom.style.display = "none";
+            }
+
+            if (containerDefault) {
+              containerDefault.style.display = "grid";
+            }
+
+            paypalContainer.style.display = "none";
+            donateBtn.style.display = "block";
+
+          });
+
+        },
+
+
+        onCancel: function () {
+
+          paypalContainer.style.display = "none";
+          donateBtn.style.display = "block";
+
+        },
+
+
+        onError: function (err) {
+
+          console.error(err);
+          alert("Payment failed. Please try again.");
+
+          paypalContainer.style.display = "none";
+          donateBtn.style.display = "block";
+
+        }
+
+      }).render("#paypal-button-container");
+
+    };
+
+  }
+
+  if (closeModalBtn) {
+
+    closeModalBtn.onclick = function () {
+
+      modal.classList.remove("active");
+
+    };
+
+  }
+
+});
+
+
+// foundation donate modal end js
+
+
+// input js doller constatnt 
+
+
+// input js doller constatnt only number type 
+
+
+// donate now click function
+
+const modal = document.querySelector(".invest-modal-foundation");
+const openModalBtn = document.querySelector(".donate-now-btn");
+const closeBtnFound = document.querySelector(".go-back-btn-found");
+
+if (openModalBtn) {
+  openModalBtn.onclick = () => {
+    modal.style.display = "grid";
+  };
+}
+if (closeBtnFound) {
+  closeBtnFound.onclick = () => {
+    modal.style.display = "none";
+
+    document.querySelector(".select-donation-account-container").style.display =
+      "grid";
+    document.querySelector(
+      ".select-donation-account-container-2",
+    ).style.display = "none";
+    document
+      .querySelectorAll(".select-ammmount-box")
+      .forEach((b) => b.classList.remove("active"));
+  };
+}
+
+// donate now click function
+
+
+// impact global image click 
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     const mapWrapper = document.getElementById('mapWrapper');
+
+//     const locations = [
+//         { id: "canada",   name: "Canada",         url: "https://changemakerindex.com" },
+//         { id: "usa",      name: "USA",            url: "https://changemakerindex.com" },
+//         { id: "united",   name: "United Kingdom", url: "https://changemakerindex.com" },
+//         { id: "swiss",    name: "Switzerland",    url: "https://changemakerindex.com" },
+//         { id: "india",    name: "India",          url: "https://changemakerindex.com" },
+//         { id: "japan",    name: "Japan",          url: "https://changemakerindex.com" },
+//         { id: "phili",    name: "Philippines",    url: "https://changemakerindex.com" },
+//         { id: "australia", name: "Australia",     url: "https://changemakerindex.com" }
+//     ];
+
+//     locations.forEach(loc => {
+//         const point = document.createElement('a');
+//         point.href = loc.url;
+//         point.id = loc.id;
+//         point.className = 'map-point';
+//         point.target = "_blank";
+//         point.title = loc.name; // Mouse le jaane par naam dikhega
+//         mapWrapper.appendChild(point);
+//     });
+// });
+
+// impact global image click 
